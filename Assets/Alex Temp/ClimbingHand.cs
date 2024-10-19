@@ -31,7 +31,7 @@ public class ClimbingHand : MonoBehaviour
                 climb -= 1;
         }
 
-        float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + climb * climbSpeed * Time.fixedDeltaTime, -.5f, .5f);
+        float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climb * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
         hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 
         float rotate = 0;
