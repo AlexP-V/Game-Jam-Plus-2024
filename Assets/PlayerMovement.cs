@@ -7,42 +7,43 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speed = 10f;
     public float jumpForce = 70f;
-    public string horizontalAxis;
-    [SerializeField] KeyCode jumpKey;
     [SerializeField] PlayerInputActions playerControls;
-    Rigidbody2D rb;
     InputAction move;
+    InputAction jump;
+    Rigidbody2D rb;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-
         playerControls = new PlayerInputActions();
+        rb = GetComponent<Rigidbody2D>();
     }
     void OnEnable()
     {
         move = playerControls.Player.Move;
         move.Enable();
+
+        jump = playerControls.Player.Fire;
+        jump.Enable();
+        jump.performed += Jump;
     }
 
     void OnDisable()
     {
         move.Disable();
+        jump.Disable();
     }
-    
+
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis(horizontalAxis);
+        float moveHorizontal = move.ReadValue<Vector2>().x;
 
         Vector2 movement = new Vector2(moveHorizontal, 0f);
         rb.AddForce(movement * speed, ForceMode2D.Force);
     }
 
-    void Update()
+    void Jump(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown(jumpKey))
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        Debug.Log("Jump");
     }
 }
