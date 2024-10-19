@@ -5,9 +5,9 @@ using UnityEngine.XR;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public int inputID;
     public float speed = 10f;
     public float jumpForce = 70f;
-    PlayerInput input;
     [SerializeField] PlayerInputActions playerControls;
     InputAction move;
     InputAction jump;
@@ -17,15 +17,9 @@ public class PlayerMovement : MonoBehaviour {
 
     void Awake()
     {
-        input = GetComponent<PlayerInput>();
         
         playerControls = new PlayerInputActions();
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    public void OnMove(InputValue value)
-    {
-        moveInput = value.Get<Vector2>();
     }
 
     void OnEnable()
@@ -46,8 +40,8 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        Vector2 movement = move.ReadValue<Vector2>();
-        movement.y = 0;
+        Vector2 moveInput = Gamepad.all[inputID].leftStick.value;
+        moveInput.y = 0;
         rb.AddForce(moveInput * speed, ForceMode2D.Force);
     }
 
