@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class P2Movement : MonoBehaviour
 {
     // Public variables that you can adjust in the Unity Inspector
     public float moveSpeed = 5f; // Movement speed
