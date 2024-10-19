@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
         move = playerControls.Player.Move;
         move.Enable();
 
-        jump = playerControls.Player.Fire;
+        jump = playerControls.Player.Jump;
         jump.Enable();
         jump.performed += Jump;
     }
