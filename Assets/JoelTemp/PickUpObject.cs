@@ -1,28 +1,33 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class PickUpObject : MonoBehaviour
 {
-    BoxCollider2D boxCollider;
-    Rigidbody2D rb;
+    HingeJoint2D hinge;
 
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
-        rb = GetComponent<Rigidbody2D>();
+        hinge = GetComponent<HingeJoint2D>();
+        hinge.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Ignore parent object
-        if (other.gameObject == transform.parent.gameObject)
+        // Ignore Player layer
+        if (other.gameObject.layer == 8)
         {
             return;
         }
 
-        if (other.gameObject.GetComponent<DistanceJoint2D>())
+        if (other.gameObject.GetComponent<Rigidbody2D>())
         {
-            other.gameObject.GetComponent<DistanceJoint2D>().connectedBody = rb;
+            FollowMouse followMouse = transform.GetComponent<FollowMouse>();
+            followMouse.sens = followMouse.initialSensitivity;
+            hinge.connectedBody = other.gameObject.GetComponent<Rigidbody2D>();
+            hinge.enabled = true;
+            hinge.autoConfigureConnectedAnchor = false;
+            transform.GetComponent<ClimbingHand>().enabled = true;
         }
     }
 }

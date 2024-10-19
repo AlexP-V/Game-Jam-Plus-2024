@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -7,12 +9,27 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpForce = 70f;
     public string horizontalAxis;
     [SerializeField] KeyCode jumpKey;
+    [SerializeField] PlayerInputActions playerControls;
     Rigidbody2D rb;
+    InputAction move;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        playerControls = new PlayerInputActions();
     }
+    void OnEnable()
+    {
+        move = playerControls.Player.Move;
+        move.Enable();
+    }
+
+    void OnDisable()
+    {
+        move.Disable();
+    }
+    
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis(horizontalAxis);
