@@ -1,33 +1,44 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PickUpObject : MonoBehaviour
 {
     HingeJoint2D hinge;
+    public KeyCode grabKey = KeyCode.E;
+    ClimbingHand climbingHand;
+
+    bool IsHolding => hinge.connectedBody != null;
+    bool IsGrabInput = false;
 
     void Start()
     {
         hinge = GetComponent<HingeJoint2D>();
+        climbingHand = GetComponent<ClimbingHand>();
         hinge.enabled = false;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void Update()
     {
-        // Ignore Player layer
-        if (other.gameObject.layer == 8)
-        {
-            return;
-        }
+        IsGrabInput = Input.GetKeyDown(grabKey);
 
-        if (other.gameObject.GetComponent<Rigidbody2D>())
+        if (IsGrabInput && IsHolding)
         {
-            FollowMouse followMouse = transform.GetComponent<FollowMouse>();
-            followMouse.sens = followMouse.initialSensitivity;
-            hinge.connectedBody = other.gameObject.GetComponent<Rigidbody2D>();
-            hinge.enabled = true;
-            hinge.autoConfigureConnectedAnchor = false;
-            transform.GetComponent<ClimbingHand>().enabled = true;
+            IsGrabInput = false;
+            SetHold(null);
         }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(IsGrabInput && !IsHolding && other.gameObject.TryGetComponent(out Rigidbody2D rb))
+            SetHold(rb);
+    }
+
+    void SetHold(Rigidbody2D rb)
+    {
+        bool isPickingUp = rb != null;
+        hinge.connectedBody = rb;
+        hinge.enabled = isPickingUp;
+        hinge.autoConfigureConnectedAnchor = !isPickingUp;
+        climbingHand.enabled = isPickingUp;
     }
 }
