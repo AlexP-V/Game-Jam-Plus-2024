@@ -7,16 +7,27 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speed = 10f;
     public float jumpForce = 70f;
+    PlayerInput input;
     [SerializeField] PlayerInputActions playerControls;
     InputAction move;
     InputAction jump;
     Rigidbody2D rb;
 
+    Vector2 moveInput;
+
     void Awake()
     {
+        input = GetComponent<PlayerInput>();
+        
         playerControls = new PlayerInputActions();
         rb = GetComponent<Rigidbody2D>();
     }
+
+    public void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
+
     void OnEnable()
     {
         move = playerControls.Player.Move;
@@ -35,10 +46,9 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float moveHorizontal = move.ReadValue<Vector2>().x;
-
-        Vector2 movement = new Vector2(moveHorizontal, 0f);
-        rb.AddForce(movement * speed, ForceMode2D.Force);
+        Vector2 movement = move.ReadValue<Vector2>();
+        movement.y = 0;
+        rb.AddForce(moveInput * speed, ForceMode2D.Force);
     }
 
     void Jump(InputAction.CallbackContext context)
