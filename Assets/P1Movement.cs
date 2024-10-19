@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class P1Movement : MonoBehaviour
+
+
 {
     // Public variables that you can adjust in the Unity Inspector
     public float moveSpeed = 5f; // Movement speed
@@ -15,6 +17,7 @@ public class P1Movement : MonoBehaviour
     public float checkRadius = 0.2f;
     public LayerMask groundLayer;
 
+   
     void Start()
     {
         // Get the Rigidbody2D component
