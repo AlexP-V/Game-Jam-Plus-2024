@@ -4,11 +4,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public float speed = 10f;
-    public float jumpForce = 700f;
+    public float jumpForce = 70f;
     public string horizontalAxis;
-    [SerializeField] private KeyCode jumpKey;
+    [SerializeField] KeyCode jumpKey;
     Rigidbody2D rb;
-    int jumps = 0;
 
     void Start()
     {
@@ -20,13 +19,13 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector2 movement = new Vector2(moveHorizontal, 0f);
         rb.AddForce(movement * speed, ForceMode2D.Force);
+    }
 
+    void Update()
+    {
         if (Input.GetKeyDown(jumpKey))
         {
-            Debug.Log("Jump " + jumps);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-
-            jumps++;
         }
     }
 }
