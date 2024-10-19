@@ -31,7 +31,8 @@ public class ClimbingHand : MonoBehaviour
                 climb -= 1;
         }
 
-        hinge.connectedAnchor += climb * climbSpeed * Time.deltaTime * Vector2.right;
+        float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + climb * climbSpeed * Time.fixedDeltaTime, -.5f, .5f);
+        hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 
         float rotate = 0;
         if (Input.GetKey(KeyCode.Q))
@@ -56,10 +57,5 @@ public class ClimbingHand : MonoBehaviour
 
         rb.AddForceAtPosition(-torqueAxis * forceMagnitude, pointA);
         rb.AddForceAtPosition(torqueAxis * forceMagnitude, pointB);
-
-        Debug.DrawRay(pointB, torqueAxis);
-        Debug.DrawRay(pointA, -torqueAxis);
-
-        Debug.DrawLine(pointA, pointB, Color.red);
     }
 }
