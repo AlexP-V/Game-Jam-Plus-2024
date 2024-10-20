@@ -22,6 +22,7 @@ public class NewPlayerMovement : MonoBehaviour
     private Transform hand;
     private AudioSource audioSource;
     Vector3 initialScale;
+    public PhysicsMaterial2D slipperyMaterial;
 
     // To control whether the move sound is playing or not
     private bool isMoving = false;
@@ -114,6 +115,15 @@ public class NewPlayerMovement : MonoBehaviour
         {
             hand.GetComponent<MoveHand>().constrainMovement = false;
             Debug.Log("Not constraining movement");
+        }
+
+        if (!groundCheck.isGrounded)
+        {
+            GetComponent<Collider2D>().sharedMaterial = slipperyMaterial;
+        }
+        else
+        {
+            GetComponent<Collider2D>().sharedMaterial = null;
         }
     }
 

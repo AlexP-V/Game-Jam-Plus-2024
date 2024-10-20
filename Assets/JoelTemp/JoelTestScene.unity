@@ -709,7 +709,7 @@ PrefabInstance:
     - target: {fileID: 1830562477860015926, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1884224378890784791, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.61
@@ -750,6 +750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: jumpForce
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7327485145081740037, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -785,6 +789,14 @@ PrefabInstance:
     - target: {fileID: 8379218339624479366, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
       value: 0.21775731
+      objectReference: {fileID: 0}
+    - target: {fileID: 8385697426836948864, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8385697426836948864, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

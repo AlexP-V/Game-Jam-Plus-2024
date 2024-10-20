@@ -106,10 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
-  jumpForce: 70
+  jumpForce: 30
   playerIndex: 0
   jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
   moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
+  slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
 --- !u!114 &8385697426836948864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515169ca22499d24a9d21a83d06d2b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 7
+  maxSpeed: 10
 --- !u!50 &1830562477860015926
 Rigidbody2D:
   serializedVersion: 4
@@ -315,7 +316,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0.006088257
-        value: 0.13735962
+        value: 0.08041382
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -324,7 +325,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.27470312
+        value: 0.21775731
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -475,7 +476,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0.006088257
-        value: 0.13735962
+        value: 0.08041382
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -484,7 +485,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.27470312
+        value: 0.21775731
         inSlope: 0
         outSlope: 0
         tangentMode: 0
