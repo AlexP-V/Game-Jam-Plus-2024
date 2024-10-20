@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: bg elements
+    uniqueID: 2432260043
+    locked: 0
+  - name: bg elements 2
+    uniqueID: 2833400483
+    locked: 0
+  - name: carpet
+    uniqueID: 3297756133
+    locked: 0
+  - name: platforms
+    uniqueID: 3624281491
+    locked: 0
