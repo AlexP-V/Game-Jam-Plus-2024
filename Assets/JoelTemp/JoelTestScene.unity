@@ -974,6 +974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccb62ffb18eb8747be915dec027322f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpClip: {fileID: 0}
+  dropClip: {fileID: 0}
   playerIndex: 1
 --- !u!212 &1840646670
 SpriteRenderer:
@@ -1500,6 +1502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccb62ffb18eb8747be915dec027322f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpClip: {fileID: 8300000, guid: f36e3268621694faf9869526c58a96c4, type: 3}
+  dropClip: {fileID: 8300000, guid: 8701a96d1f4d440d19c45dd6580ffd83, type: 3}
   playerIndex: 0
 --- !u!114 &4416897957015751315
 MonoBehaviour:
