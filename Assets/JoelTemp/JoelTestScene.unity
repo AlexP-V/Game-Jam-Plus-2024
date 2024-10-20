@@ -967,6 +967,10 @@ MonoBehaviour:
   climbSpeed: 2
   rotationForce: 1000
   playerIndex: 1
+  rotateLeftClip: {fileID: 0}
+  rotateRightClip: {fileID: 0}
+  climbUpClip: {fileID: 0}
+  climbDownClip: {fileID: 0}
 --- !u!114 &1840646668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,6 +1650,10 @@ MonoBehaviour:
   climbSpeed: 0.3
   rotationForce: 1000
   playerIndex: 0
+  rotateLeftClip: {fileID: 8300000, guid: 6390ff89888db4bd0b81cdb090994dfa, type: 3}
+  rotateRightClip: {fileID: 8300000, guid: 746f3c9ece9e14da5bd5f9f7d01f28e1, type: 3}
+  climbUpClip: {fileID: 8300000, guid: b017549b7e7dc45d6b32bd3859a23252, type: 3}
+  climbDownClip: {fileID: 8300000, guid: d61289ac8982f40eb9c0f8499d0063ef, type: 3}
 --- !u!1 &6729439621131717193
 GameObject:
   m_ObjectHideFlags: 0
