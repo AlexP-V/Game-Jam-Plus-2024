@@ -1,5 +1,4 @@
 using UnityEngine;
-using static P1Movement;
 
 public class RespawnTrigger : MonoBehaviour
 {
@@ -9,15 +8,11 @@ public class RespawnTrigger : MonoBehaviour
     // This will be called when something enters the trigger
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the object entering the trigger is the player
-        if (other.CompareTag("Player"))
+        // Check if the object entering the trigger has the "Respawn" tag
+        if (other.CompareTag("Respawn"))
         {
-            // Call the respawn method on the player object
-            PlayerRespawn player = other.GetComponent<PlayerRespawn>();
-            if (player != null)
-            {
-                player.Respawn(respawnPoint.position); // Pass in the respawn location
-            }
+            // Move the object with the "Respawn" tag to the respawn point
+            other.transform.position = respawnPoint.position;
         }
     }
 }
