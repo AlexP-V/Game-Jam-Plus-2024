@@ -50,6 +50,7 @@ public class P1Movement : MonoBehaviour
     {
         // Apply a force upwards using the jumpForce variable
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        
     }
 
     private void FixedUpdate()

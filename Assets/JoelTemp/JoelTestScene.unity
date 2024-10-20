@@ -279,6 +279,8 @@ MonoBehaviour:
   speed: 500
   jumpForce: 70
   playerIndex: 1
+  jumpClip: {fileID: 0}
+  moveClip: {fileID: 0}
 --- !u!212 &3670317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -947,6 +949,7 @@ MonoBehaviour:
   initialSensitivity: 10
   sens: 0
   playerIndex: 1
+  constrainMovement: 0
 --- !u!114 &1840646669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,6 +1329,7 @@ MonoBehaviour:
   initialSensitivity: 10
   sens: 0
   playerIndex: 0
+  constrainMovement: 0
 --- !u!114 &1895671474459019662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1345,8 @@ MonoBehaviour:
   speed: 500
   jumpForce: 70
   playerIndex: 0
+  jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
+  moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
 --- !u!4 &2703152108766346470
 Transform:
   m_ObjectHideFlags: 0
