@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: wall
+    uniqueID: 1521924489
+    locked: 0
+  - name: infront wall
+    uniqueID: 3549171309
+    locked: 0
   - name: carpet
     uniqueID: 3297756133
     locked: 0
