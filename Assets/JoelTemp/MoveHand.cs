@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MoveHand : MonoBehaviour
@@ -9,6 +10,8 @@ public class MoveHand : MonoBehaviour
     [SerializeField] int playerIndex = 0;
 
     [HideInInspector] public bool constrainMovement = false;
+
+    public float rotationOffset = 0;    
 
     void Start()
     {
@@ -39,4 +42,16 @@ public class MoveHand : MonoBehaviour
     {
         rb.velocity = targetDir * sens;
     }
+
+    void RotateInDirection(Transform transform, Vector3 direction)
+    {
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + rotationOffset));
+    }
+
+    void Update()
+    {
+        if (targetDir != Vector3.zero)
+            RotateInDirection(transform, targetDir);
+    }    
 }
