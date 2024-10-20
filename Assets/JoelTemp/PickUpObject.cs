@@ -5,7 +5,6 @@ public class PickUpObject : MonoBehaviour
     HingeJoint2D hinge;
     ClimbingHand climbingHand;
     Rigidbody2D rigidBody;
-    GroundCheck groundCheck;
 
     // Audio clips for pick up and drop
     public AudioClip pickUpClip;
@@ -17,20 +16,22 @@ public class PickUpObject : MonoBehaviour
 
     [SerializeField] int playerIndex = 0;
 
+    GroundCheck groundCheck;
+
     void Start()
     {
         hinge = GetComponent<HingeJoint2D>();
         climbingHand = GetComponent<ClimbingHand>();
         hinge.enabled = false;
         rigidBody = GetComponent<Rigidbody2D>();
-        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();
-
         // Initialize the AudioSource component
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();
+
     }
 
     public int getPlayerIndex()
@@ -75,5 +76,18 @@ public class PickUpObject : MonoBehaviour
 
         // Adjust mass based on whether the player is holding something or not
         rigidBody.mass = isPickingUp ? 1f : 0f;
+    }
+
+
+    void Update()
+    {
+        if (IsHolding && !groundCheck.isGrounded)
+        {
+            transform.GetComponent<MoveHand>().enabled = false;
+        }
+        else
+        {
+            transform.GetComponent<MoveHand>().enabled = true;
+        }
     }
 }
