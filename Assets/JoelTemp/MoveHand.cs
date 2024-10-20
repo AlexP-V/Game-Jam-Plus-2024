@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveHand : MonoBehaviour
@@ -9,6 +7,8 @@ public class MoveHand : MonoBehaviour
     Rigidbody2D rb;
     Vector3 targetDir;
     [SerializeField] int playerIndex = 0;
+
+    [HideInInspector] public bool constrainMovement = false;
 
     void Start()
     {
@@ -21,14 +21,22 @@ public class MoveHand : MonoBehaviour
         return playerIndex;
     }   
 
-    public void SetTargetDir(Vector3 target)
+    public void SetTargetDir(Vector3 newTarget)
     {
-        targetDir = target;
+       // if (!constrainMovement)
+        //{
+            targetDir = newTarget;
+            targetDir.Normalize();
+        //}
     }
+
+    public Vector2 getTargetDir()
+    {
+        return targetDir;
+    }   
 
     void FixedUpdate() 
     {
-        targetDir.Normalize();
         rb.velocity = targetDir * sens;
     }
 }
