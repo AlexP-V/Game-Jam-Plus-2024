@@ -1092,8 +1092,8 @@ Transform:
   m_GameObject: {fileID: 39849651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 97.3001, y: 36.586735, z: 0.09030111}
-  m_LocalScale: {x: 4.2694306, y: 5.7331, z: 1}
+  m_LocalPosition: {x: 107.7249, y: 36.586735, z: 0.09030111}
+  m_LocalScale: {x: 4.8125024, y: 5.7331, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 392638189}
@@ -1464,7 +1464,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1832,8 +1832,8 @@ MonoBehaviour:
   sceneName: Win Scene
   player1: {fileID: 1494104369}
   player2: {fileID: 561895642}
-  finalMilestone: {fileID: 0}
-  triggerDistance: 2
+  finalMilestone: {fileID: 2118048266}
+  triggerDistance: 100
 --- !u!4 &106605885
 Transform:
   m_ObjectHideFlags: 0
@@ -1843,7 +1843,7 @@ Transform:
   m_GameObject: {fileID: 106605883}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1270.6144, y: 338.93918, z: -5.427752}
+  m_LocalPosition: {x: 205, y: 73, z: -5.427752}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2109,6 +2109,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &127751337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127751338}
+  m_Layer: 0
+  m_Name: Music Milestone (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127751338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127751337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139775214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,7 +3776,7 @@ Transform:
   m_GameObject: {fileID: 353546286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 177.2, y: 45.6, z: 0.09030111}
+  m_LocalPosition: {x: 177.2, y: 50.7, z: 0.09030111}
   m_LocalScale: {x: 1.1096, y: 1.1096, z: 1.1096}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3820,7 +3851,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4545,7 +4576,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4717,7 +4748,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5053,6 +5084,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &502673448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 502673449}
+  m_Layer: 0
+  m_Name: Music Milestone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502673449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502673448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503775742
 GameObject:
   m_ObjectHideFlags: 0
@@ -5771,7 +5833,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5832,6 +5894,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &559636252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559636253}
+  m_Layer: 0
+  m_Name: Music Milestone (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559636253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559636252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &561895641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6174,7 +6267,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7171,7 +7264,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7286,7 +7379,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7492,6 +7585,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &704823925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704823926}
+  m_Layer: 0
+  m_Name: Music Milestone (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704823926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704823925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704997591
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7685,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7951,7 +8075,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8211,7 +8335,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8601,7 +8725,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8716,7 +8840,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9056,6 +9180,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 392638189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &970821221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970821222}
+  m_Layer: 0
+  m_Name: Music Milestone (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970821222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970821221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008123673
 GameObject:
@@ -9975,7 +10130,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10614,7 +10769,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11273,7 +11428,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11418,7 +11573,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -11793,7 +11948,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12198,7 +12353,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12328,7 +12483,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12458,7 +12613,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -15222,11 +15377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1884224378890784791, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.188853
+      value: 157.5
       objectReference: {fileID: 0}
     - target: {fileID: 1884224378890784791, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3965812
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 1884224378890784791, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15747,7 +15902,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -16671,7 +16826,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -17900,7 +18055,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -18974,7 +19129,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19119,7 +19274,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19633,7 +19788,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19832,7 +19987,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19907,6 +20062,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 392638189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1956661579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956661580}
+  m_Layer: 0
+  m_Name: Music Milestone (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956661580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956661579}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 134.29636, y: 37.420544, z: -5.5691333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959190186
 GameObject:
@@ -20501,7 +20687,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.44, y: 3.13}
+    oldSize: {x: 11.9, y: 3.2}
     newSize: {x: 12.44, y: 3.13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20975,7 +21161,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.31, y: 12.5}
+    oldSize: {x: 5.54, y: 12.5}
     newSize: {x: 5.31, y: 12.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -21471,7 +21657,7 @@ Transform:
   m_GameObject: {fileID: 2118048265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 164.38998, y: 49.51053, z: -0.5292237}
+  m_LocalPosition: {x: 179.7, y: 43.1, z: -0.5292237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21493,3 +21679,9 @@ SceneRoots:
   - {fileID: 2118048266}
   - {fileID: 1494652956}
   - {fileID: 106605885}
+  - {fileID: 502673449}
+  - {fileID: 559636253}
+  - {fileID: 1956661580}
+  - {fileID: 127751338}
+  - {fileID: 704823926}
+  - {fileID: 970821222}

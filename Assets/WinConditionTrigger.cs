@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TriggerCanvasDisplay : MonoBehaviour
+public class WinConditionTrigger : MonoBehaviour
 {
     public GameObject winCanvas;  // Reference to the Canvas that will appear
     private Collider2D player1 = null;
@@ -65,7 +65,4 @@ public class TriggerCanvasDisplay : MonoBehaviour
         }
     }
 }
-
-
-
 
