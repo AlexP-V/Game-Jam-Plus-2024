@@ -147,7 +147,19 @@ MonoBehaviour:
     m_ActionId: f956d0f5-f609-41e0-9be6-fa8530b9293f
     m_ActionName: Player/ControlArm[/SwitchProControllerHID/rightStick]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 239335620221901953}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnGrabInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: bb9c13a3-0d0a-44e7-ade8-7d1a37489cc4
     m_ActionName: Player/Grab[/SwitchProControllerHID/buttonEast]
   - m_PersistentCalls:

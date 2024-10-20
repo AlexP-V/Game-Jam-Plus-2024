@@ -460,6 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccb62ffb18eb8747be915dec027322f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabKey: 101
+  playerIndex: 0
 --- !u!233 &940287395
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -812,6 +814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccb62ffb18eb8747be915dec027322f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabKey: 101
+  playerIndex: 0
 --- !u!212 &1231828497
 SpriteRenderer:
   m_ObjectHideFlags: 0

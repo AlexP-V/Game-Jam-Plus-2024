@@ -9,6 +9,8 @@ public class PickUpObject : MonoBehaviour
     bool IsHolding => hinge.connectedBody != null;
     bool IsGrabInput = false;
 
+    [SerializeField] int playerIndex = 0;
+
     void Start()
     {
         hinge = GetComponent<HingeJoint2D>();
@@ -16,15 +18,18 @@ public class PickUpObject : MonoBehaviour
         hinge.enabled = false;
     }
 
-    void Update()
+    public int getPlayerIndex()
     {
-        IsGrabInput = Input.GetKeyDown(grabKey);
+        return playerIndex;
+    }   
 
-        if (IsGrabInput && IsHolding)
-        {
-            IsGrabInput = false;
+    public void SetGrabInput(bool value)
+    {
+        IsGrabInput = value;
+        Debug.Log("Grab input: " + value);
+
+        if (!IsGrabInput)
             SetHold(null);
-        }
     }
 
     void OnTriggerStay2D(Collider2D other)

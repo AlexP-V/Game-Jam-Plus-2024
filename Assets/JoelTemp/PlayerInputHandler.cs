@@ -11,6 +11,7 @@ public class PlayerInputHandler : MonoBehaviour
     NewPlayerMovement playerMovement;
     MoveHand handMover;
     ClimbingHand climbingHand;
+    PickUpObject pickUpObject;
    
     void Awake()
     {
@@ -24,6 +25,9 @@ public class PlayerInputHandler : MonoBehaviour
 
         var climbingHands = FindObjectsOfType<ClimbingHand>();
         climbingHand = climbingHands.FirstOrDefault(mover => mover.getPlayerIndex() == index);
+
+        var objectPickers = FindObjectsOfType<PickUpObject>();
+        pickUpObject = objectPickers.FirstOrDefault(pickUpObject => pickUpObject.getPlayerIndex() == index);
     }
 
     public void OnJumpInput(CallbackContext context)
@@ -33,15 +37,20 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnPlayerMoveInput(CallbackContext context)
     {
-        Debug.Log("Setting Input Vector to: " + context.ReadValue<Vector2>());
         playerMovement.setInputVector(context.ReadValue<Vector2>());
     }
 
     public void OnHandMoveInput(CallbackContext context)
     {
-        Debug.Log("Setting Target Dir to: " + context.ReadValue<Vector2>());
         handMover.SetTargetDir(context.ReadValue<Vector2>());
     }    
+
+    public void OnGrabInput(CallbackContext context)
+    {
+        Debug.Log("Grab input!");
+        if (context.performed) pickUpObject.SetGrabInput(true);
+        else if (context.canceled) pickUpObject.SetGrabInput(false);
+    }
 
     public void OnClimbInput(CallbackContext context)
     {
