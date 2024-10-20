@@ -82,25 +82,25 @@ public class NewPlayerMovement : MonoBehaviour
         rb.AddForce(moveInput * speed, ForceMode2D.Force);
 
         // Play movement sound if player is moving and the sound is not already playing
-        if (moveInput.x != 0)
-        {
-            if (!isMoving && moveClip != null)
-            {
-                audioSource.loop = true;
-                audioSource.clip = moveClip;
-                audioSource.Play();
-                isMoving = true;
-            }
-        }
-        else
-        {
-            // Stop movement sound when player stops moving
-            if (isMoving)
-            {
-                audioSource.Stop();
-                isMoving = false;
-            }
-        }
+        // if (moveInput.x != 0)
+        // {
+        //     if (!isMoving && moveClip != null)
+        //     {
+        //         audioSource.loop = true;
+        //         audioSource.clip = moveClip;
+        //         audioSource.Play();
+        //         isMoving = true;
+        //     }
+        // }
+        // else
+        // {
+        //     // Stop movement sound when player stops moving
+        //     if (isMoving)
+        //     {
+        //         audioSource.Stop();
+        //         isMoving = false;
+        //     }
+        // }
 
         // Hand joint constraint logic
         Vector2 handTargetDir = hand.position - transform.position;
