@@ -12,9 +12,12 @@ public class NewPlayerMovement : MonoBehaviour
     public AudioClip jumpClip;
     public AudioClip moveClip;
 
+    Animator animator;
+
+    DistanceJoint2D handjoint;
+
     private Rigidbody2D rb;
     private GroundCheck groundCheck;
-    private DistanceJoint2D handjoint;
     private Vector2 inputVector = Vector2.zero;
     private Transform hand;
     private AudioSource audioSource;
@@ -35,6 +38,8 @@ public class NewPlayerMovement : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+
+        animator = GetComponentInChildren<Animator>();
     }
 
     public int getPlayerIndex()
@@ -60,6 +65,8 @@ public class NewPlayerMovement : MonoBehaviour
             }
 
             Debug.Log("Jump");
+
+            animator.SetTrigger("Jump");
         }
     }
 
@@ -97,12 +104,27 @@ public class NewPlayerMovement : MonoBehaviour
         if (handTargetDir.magnitude > handjoint.distance - handjoint.distance * 0.1f)
         {
             hand.GetComponent<MoveHand>().constrainMovement = true;
+            //hand.position = Vector2.MoveTowards(hand.position, transform.position, handjoint.distance * 0.1f);
             Debug.Log("Constraining movement");
         }
         else
         {
             hand.GetComponent<MoveHand>().constrainMovement = false;
             Debug.Log("Not constraining movement");
+        }
+    }
+
+    void Update()
+    {
+        // FOR ANIMATION
+        animator.SetFloat("Speed", Mathf.Abs(inputVector.x));
+        if (inputVector.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (inputVector.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }

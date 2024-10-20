@@ -9,12 +9,15 @@ public class ClimbingHand : MonoBehaviour
     float rotationValue = 0;
     [SerializeField] int playerIndex = 0;
 
+    Animator animator;
+
     float climbValue = 0;
 
     HingeJoint2D hinge;
     void Start()
     {
         hinge = GetComponent<HingeJoint2D>();
+        animator = transform.parent.GetComponentInChildren<Animator>();
     }
 
     public int getPlayerIndex()
@@ -25,6 +28,14 @@ public class ClimbingHand : MonoBehaviour
     public void SetClimbValue(float value)
     {
         climbValue = value;
+        if (climbValue != 0)
+        {
+            animator.SetBool("isClimbing", true);
+        }
+        else
+        {
+            animator.SetBool("isClimbing", false);
+        }
     }
 
     public void setRotationValue(float value)
