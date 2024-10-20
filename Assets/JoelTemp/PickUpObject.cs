@@ -3,7 +3,6 @@ using UnityEngine;
 public class PickUpObject : MonoBehaviour
 {
     HingeJoint2D hinge;
-    public KeyCode grabKey = KeyCode.E;
     ClimbingHand climbingHand;
 
     bool IsHolding => hinge.connectedBody != null;
@@ -23,10 +22,9 @@ public class PickUpObject : MonoBehaviour
         return playerIndex;
     }   
 
-    public void SetGrabInput(bool value)
+    public void SetGrabInput()
     {
-        IsGrabInput = value;
-        Debug.Log("Grab input: " + value);
+        IsGrabInput = !IsGrabInput;
 
         if (!IsGrabInput)
             SetHold(null);

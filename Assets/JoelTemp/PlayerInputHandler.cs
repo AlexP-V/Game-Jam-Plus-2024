@@ -48,12 +48,16 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnGrabInput(CallbackContext context)
     {
         Debug.Log("Grab input!");
-        if (context.performed) pickUpObject.SetGrabInput(true);
-        else if (context.canceled) pickUpObject.SetGrabInput(false);
+        pickUpObject.SetGrabInput();
     }
 
     public void OnClimbInput(CallbackContext context)
     {
         climbingHand.SetClimbValue(context.ReadValue<float>());
+    }
+
+    public void OnRotateObjectInput(CallbackContext context)
+    {
+        climbingHand.setRotationValue(context.ReadValue<float>());
     }
 }

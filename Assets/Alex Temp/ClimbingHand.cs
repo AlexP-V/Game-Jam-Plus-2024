@@ -6,6 +6,7 @@ public class ClimbingHand : MonoBehaviour
     public bool arrow;
     public float climbSpeed = 5;
     public float rotationForce = 100;
+    float rotationValue = 0;
     [SerializeField] int playerIndex = 0;
 
     float climbValue = 0;
@@ -26,21 +27,20 @@ public class ClimbingHand : MonoBehaviour
         climbValue = value;
     }
 
+    public void setRotationValue(float value)
+    {
+        rotationValue = value;
+    }
+
     void FixedUpdate()
     {
         float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climbValue * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
         hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 
-        float rotate = 0;
-        if (Input.GetKey(KeyCode.Q))
-            rotate -= 1;
-        if (Input.GetKey(KeyCode.E))
-            rotate += 1;
-
         // add torque at hinge connection pivot
-        ApplyTorqueAtPivot(hinge.connectedBody, hinge.connectedAnchor, rotate * rotationForce);
+        ApplyTorqueAtPivot(hinge.connectedBody, hinge.connectedAnchor, rotationValue * rotationForce);
 
-        climbValue = 0;
+        //climbValue = 0;
     }
 
     static void ApplyTorqueAtPivot(Rigidbody2D rb, Vector2 pivotPoint, float forceMagnitude)
