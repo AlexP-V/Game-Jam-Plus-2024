@@ -38,18 +38,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: carpet
+    uniqueID: 3297756133
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: bg elements
+  - name: elemen1
+    uniqueID: 217352261
+    locked: 0
+  - name: element2
+    uniqueID: 532932863
+    locked: 0
+  - name: element3
     uniqueID: 2432260043
+    locked: 0
+  - name: element4
+    uniqueID: 4056294367
     locked: 0
   - name: bg elements 2
     uniqueID: 2833400483
     locked: 0
-  - name: carpet
-    uniqueID: 3297756133
-    locked: 0
   - name: platforms
     uniqueID: 3624281491
+    locked: 0
+  - name: platform2
+    uniqueID: 2679604801
     locked: 0
