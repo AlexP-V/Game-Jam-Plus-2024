@@ -5,6 +5,10 @@ public class PickUpObject : MonoBehaviour
     HingeJoint2D hinge;
     ClimbingHand climbingHand;
 
+    Rigidbody2D rigidBody;
+
+    GroundCheck groundCheck;
+
     bool IsHolding => hinge.connectedBody != null;
     bool IsGrabInput = false;
 
@@ -15,6 +19,8 @@ public class PickUpObject : MonoBehaviour
         hinge = GetComponent<HingeJoint2D>();
         climbingHand = GetComponent<ClimbingHand>();
         hinge.enabled = false;
+        rigidBody = GetComponent<Rigidbody2D>();
+        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();
     }
 
     public int getPlayerIndex()
@@ -43,5 +49,7 @@ public class PickUpObject : MonoBehaviour
         hinge.enabled = isPickingUp;
         hinge.autoConfigureConnectedAnchor = !isPickingUp;
         climbingHand.enabled = isPickingUp;
+        if (isPickingUp) this.rigidBody.mass = 1f;
+        if (!isPickingUp) this.rigidBody.mass = 0f;
     }
 }
