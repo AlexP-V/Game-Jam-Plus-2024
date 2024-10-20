@@ -6,6 +6,9 @@ public class ClimbingHand : MonoBehaviour
     public bool arrow;
     public float climbSpeed = 5;
     public float rotationForce = 100;
+    [SerializeField] int playerIndex = 0;
+
+    float climbValue = 0;
 
     HingeJoint2D hinge;
     void Start()
@@ -13,25 +16,19 @@ public class ClimbingHand : MonoBehaviour
         hinge = GetComponent<HingeJoint2D>();
     }
 
+    public int getPlayerIndex()
+    {
+        return playerIndex;
+    }   
+
+    public void SetClimbValue(float value)
+    {
+        climbValue = value;
+    }
+
     void FixedUpdate()
     {
-        float climb = 0;
-        if (arrow)
-        {
-            if(Input.GetKey(KeyCode.UpArrow))
-                climb += 1;
-            if(Input.GetKey(KeyCode.DownArrow))
-                climb -= 1;
-        }
-        else
-        {
-            if(Input.GetKey(KeyCode.W))
-                climb += 1;
-            if(Input.GetKey(KeyCode.S))
-                climb -= 1;
-        }
-
-        float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climb * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
+        float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climbValue * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
         hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 
         float rotate = 0;
@@ -42,7 +39,8 @@ public class ClimbingHand : MonoBehaviour
 
         // add torque at hinge connection pivot
         ApplyTorqueAtPivot(hinge.connectedBody, hinge.connectedAnchor, rotate * rotationForce);
-        
+
+        climbValue = 0;
     }
 
     static void ApplyTorqueAtPivot(Rigidbody2D rb, Vector2 pivotPoint, float forceMagnitude)

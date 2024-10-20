@@ -296,14 +296,14 @@ GameObject:
   - component: {fileID: 940287386}
   - component: {fileID: 940287389}
   - component: {fileID: 940287394}
-  - component: {fileID: 940287387}
+  - component: {fileID: 940287398}
   - component: {fileID: 940287396}
   - component: {fileID: 940287385}
   - component: {fileID: 940287384}
   - component: {fileID: 940287395}
   - component: {fileID: 940287397}
   m_Layer: 9
-  m_Name: hand
+  m_Name: handP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,20 +396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 606386277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &940287387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940287383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4b7ccee90f12a418a1d602796bd3e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialSensitivity: 10
-  sens: 0
 --- !u!212 &940287389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -514,6 +500,7 @@ MonoBehaviour:
   arrow: 0
   climbSpeed: 2
   rotationForce: 1000
+  playerIndex: 0
 --- !u!114 &940287397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +514,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
+--- !u!114 &940287398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940287383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fc3663207bad043b5ac3436d40fa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialSensitivity: 10
+  sens: 0
+  playerIndex: 0
 --- !u!1 &1048807200
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +785,7 @@ MonoBehaviour:
   arrow: 0
   climbSpeed: 2
   rotationForce: 1000
+  playerIndex: 0
 --- !u!114 &1231828495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,7 +1045,7 @@ DistanceJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326527265}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 940287385}

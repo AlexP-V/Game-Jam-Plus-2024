@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class FollowMouse : MonoBehaviour
+public class MoveHand : MonoBehaviour
 {
     public float initialSensitivity = 10f;
     [HideInInspector] public float sens; 
     Rigidbody2D rb;
-    Vector3 mousePos;
+    Vector3 targetDir;
+    [SerializeField] int playerIndex = 0;
 
     void Start()
     {
@@ -17,14 +16,19 @@ public class FollowMouse : MonoBehaviour
         sens = initialSensitivity;
     }
 
-    void Update()
+    public int getPlayerIndex()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        return playerIndex;
+    }   
+
+    public void SetTargetDir(Vector3 target)
+    {
+        targetDir = target;
     }
+
     void FixedUpdate() 
     {
-        Vector3 mouseDir = mousePos - transform.position;
-        mouseDir.Normalize();
-        rb.velocity = mouseDir * sens;
+        targetDir.Normalize();
+        rb.velocity = targetDir * sens;
     }
 }
