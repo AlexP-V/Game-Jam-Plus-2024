@@ -44,7 +44,13 @@ public class PickUpObject : MonoBehaviour
         IsGrabInput = !IsGrabInput;
 
         if (!IsGrabInput)
+        {
+            if (IsHolding && dropClip != null)
+            {
+                audioSource.PlayOneShot(dropClip);
+            }
             SetHold(null);  // Drop the object if the grab input is released
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -63,10 +69,6 @@ public class PickUpObject : MonoBehaviour
         if (isPickingUp && pickUpClip != null)
         {
             audioSource.PlayOneShot(pickUpClip);
-        }
-        else if (!isPickingUp && dropClip != null)
-        {
-            audioSource.PlayOneShot(dropClip);
         }
 
         hinge.connectedBody = rb;
