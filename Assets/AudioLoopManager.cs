@@ -9,11 +9,10 @@ public class AudioLoopManager : MonoBehaviour
     public Transform[] milestones;   // Array of Transform for milestone positions
     private bool fading = false;
     public float volumeFadeOutSpeed = 0.5f;  // Speed at which volume decreases
-    public float volumeFadeInSpeed = 0.5f;  // Speed at which volume increases
-
-    public float minVolume = 0.3f;        // Minimum volume after fade
+    public float volumeFadeInSpeed = 0.5f;   // Speed at which volume increases
+    public float minVolume = 0.3f;           // Minimum volume after fade
     private float startingVolume;
-    public float loopPlayTime = 60f;      // Time before volume starts decreasing
+    public float loopPlayTime = 60f;         // Time before volume starts decreasing
 
     private int currentMilestoneIndex = 0;
     private float currentLoopStartTime = 0f;
@@ -36,16 +35,12 @@ public class AudioLoopManager : MonoBehaviour
 
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.A))
-        {
-            ActivateNextLoop();
-        }*/
-
-        // Check if both players have reached the current milestone
-        if (BothPlayersAtMilestone())
+        // Check if either player has reached the current milestone
+        if (PlayerAtMilestone())
         {
             ActivateNextLoop();
         }
+
         // Check if the current loop has been playing for more than 1 minute, start reducing volume
         AudioSource currentLoop = audioLoops[currentMilestoneIndex];
         if (Time.time - currentLoopStartTime > loopPlayTime)
@@ -53,22 +48,24 @@ public class AudioLoopManager : MonoBehaviour
             fading = true;
             FadeOutCurrentLoop();
         }
-        else if (currentLoop.volume < 1f && fading!)
+        else if (currentLoop.volume < 1f && !fading)
         {
             FadeInCurrentLoop();
         }
     }
 
-    bool BothPlayersAtMilestone()
+    // Update this method to check if either player reached the milestone
+    bool PlayerAtMilestone()
     {
         // Ensure both players exist and the current milestone index is valid
         if (player1 == null || player2 == null || currentMilestoneIndex >= milestones.Length) return false;
 
-        // Check if both players have reached the current milestone (collider or area)
+        // Check if either player has reached the current milestone
         float distance1 = Vector2.Distance(player1.transform.position, milestones[currentMilestoneIndex].position);
         float distance2 = Vector2.Distance(player2.transform.position, milestones[currentMilestoneIndex].position);
 
-        return distance1 < 2f && distance2 < 2f; // Adjust the distance threshold as necessary
+        // Trigger the next loop if any player is within 2 units of the milestone
+        return distance1 < 2f || distance2 < 2f;
     }
 
     void ActivateNextLoop()

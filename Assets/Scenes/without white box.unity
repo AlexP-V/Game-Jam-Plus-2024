@@ -3842,7 +3842,7 @@ SpriteRenderer:
   m_Size: {x: 23.689999, y: 9.982651}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &353546289
@@ -9095,6 +9095,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 392638189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &984104961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1379627621442925154, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_Name
+      value: MusicHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986458330370881376, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940224264998935640, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1494104369}
+    - target: {fileID: 8940224264998935640, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 561895642}
+    - target: {fileID: 8940224264998935640, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: loopPlayTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940224264998935640, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+      propertyPath: milestones.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+--- !u!1 &984104962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1379627621442925154, guid: f83795ad9c89b4d04b47762b988b746a, type: 3}
+  m_PrefabInstance: {fileID: 984104961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1008123673
 GameObject:
   m_ObjectHideFlags: 0
@@ -17908,6 +17986,8 @@ MonoBehaviour:
     _prefab: Assets/JoelTemp/Player2 Variant.prefab
   - _gameObject: {fileID: 561895643}
     _prefab: Assets/Kevin Temp/Femaleplayer2.psb
+  - _gameObject: {fileID: 984104962}
+    _prefab: Assets/MusicHolder.prefab
 --- !u!4 &1827145623
 Transform:
   m_ObjectHideFlags: 11
@@ -21609,3 +21689,4 @@ SceneRoots:
   - {fileID: 229154777}
   - {fileID: 1494104368}
   - {fileID: 561895641}
+  - {fileID: 984104961}
