@@ -21,6 +21,7 @@ public class NewPlayerMovement : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
     private Transform hand;
     private AudioSource audioSource;
+    Vector3 initialScale;
 
     // To control whether the move sound is playing or not
     private bool isMoving = false;
@@ -40,6 +41,8 @@ public class NewPlayerMovement : MonoBehaviour
         }
 
         animator = GetComponentInChildren<Animator>();
+
+        initialScale = transform.localScale;
     }
 
     public int getPlayerIndex()
@@ -120,11 +123,13 @@ public class NewPlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(inputVector.x));
         if (inputVector.x > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            Vector3 theScale = transform.localScale;
+            transform.localScale = new Vector3(initialScale.x, theScale.y, theScale.z);
         }
         else if (inputVector.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            Vector3 theScale = transform.localScale;
+            transform.localScale = new Vector3(-initialScale.x, theScale.y, theScale.z);
         }
     }
 }
