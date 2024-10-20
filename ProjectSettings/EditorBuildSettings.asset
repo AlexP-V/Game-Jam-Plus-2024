@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/without white box.unity
     guid: 5ce1d3f9ca9d7f144afa00a7161d9359
+  - enabled: 1
+    path: Assets/Win Scene.unity
+    guid: e7d20d90d889b484dbde5c41d1525448
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2e950587abd919c4b9ef72f3942f66eb, type: 2}
