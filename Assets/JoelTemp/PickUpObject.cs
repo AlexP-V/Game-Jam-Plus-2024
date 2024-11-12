@@ -83,13 +83,13 @@ public class PickUpObject : MonoBehaviour
 
     void Update()
     {
-        if (IsHolding && !groundCheck.isGrounded)
-        {
-            transform.GetComponent<MoveHand>().enabled = false;
-        }
-        else
-        {
-            transform.GetComponent<MoveHand>().enabled = true;
-        }
+        //if (IsHolding && !groundCheck.isGrounded)
+        //{
+        //    transform.GetComponent<MoveHand>().enabled = false;
+        //}
+        //else
+        //{
+        //    transform.GetComponent<MoveHand>().enabled = true;
+        //}
     }
 }

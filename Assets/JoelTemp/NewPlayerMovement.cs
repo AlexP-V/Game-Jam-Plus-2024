@@ -114,7 +114,6 @@ public class NewPlayerMovement : MonoBehaviour
         else
         {
             hand.GetComponent<MoveHand>().constrainMovement = false;
-            Debug.Log("Not constraining movement");
         }
 
         if (!groundCheck.isGrounded)

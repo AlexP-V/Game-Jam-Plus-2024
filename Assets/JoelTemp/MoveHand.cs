@@ -5,8 +5,9 @@ public class MoveHand : MonoBehaviour
     public float initialSensitivity = 10f;
     [HideInInspector] public float sens; 
     Rigidbody2D rb;
-    Vector3 targetDir;
+    Vector3 handTarget;
     [SerializeField] int playerIndex = 0;
+    [SerializeField] Transform body;
 
     [HideInInspector] public bool constrainMovement = false;
 
@@ -27,19 +28,20 @@ public class MoveHand : MonoBehaviour
     {
        // if (!constrainMovement)
         //{
-            targetDir = newTarget;
-            targetDir.Normalize();
+            handTarget = newTarget;
+            //handTarget.Normalize();
         //}
     }
 
     public Vector2 getTargetDir()
     {
-        return targetDir;
+        return handTarget;
     }   
 
     void FixedUpdate() 
     {
-        rb.velocity = targetDir * sens;
+        Vector2 moveDir = -rb.position + (Vector2)(handTarget + body.position);
+        rb.velocity = moveDir * sens;
     }
 
     void RotateInDirection(Transform transform, Vector3 direction)
@@ -50,7 +52,7 @@ public class MoveHand : MonoBehaviour
 
     void Update()
     {
-        if (targetDir != Vector3.zero)
-            RotateInDirection(transform, targetDir);
-    }    
+        if (handTarget != Vector3.zero)
+            RotateInDirection(transform, handTarget);
+    }
 }
