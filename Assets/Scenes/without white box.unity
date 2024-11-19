@@ -1811,7 +1811,7 @@ GameObject:
   - component: {fileID: 106605885}
   - component: {fileID: 106605884}
   m_Layer: 0
-  m_Name: ProgressCheck
+  m_Name: WinConditionCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1830,10 +1830,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Win Scene
-  player1: {fileID: 1494104369}
-  player2: {fileID: 561895642}
-  finalMilestone: {fileID: 2118048266}
-  triggerDistance: 100
+  player1: {fileID: 1494104370}
+  player2: {fileID: 478267474}
+  triggerDistance: 8
 --- !u!4 &106605885
 Transform:
   m_ObjectHideFlags: 0
@@ -21702,37 +21701,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2601594689713271340, guid: 064cf48703311fe43a127e4709106ab7, type: 3}
   m_PrefabInstance: {fileID: 448504199}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2118048265
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2118048266}
-  m_Layer: 0
-  m_Name: WinCondition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2118048266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118048265}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 179.7, y: 43.1, z: -0.5292237}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -21746,7 +21714,6 @@ SceneRoots:
   - {fileID: 1098515651}
   - {fileID: 1494104368}
   - {fileID: 561895641}
-  - {fileID: 2118048266}
   - {fileID: 1494652956}
   - {fileID: 106605885}
   - {fileID: 502673449}

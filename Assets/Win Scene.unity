@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 990972539}
   - component: {fileID: 990972538}
   - component: {fileID: 990972537}
-  - component: {fileID: 990972536}
+  - component: {fileID: 990972540}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -479,19 +479,6 @@ RectTransform:
   m_AnchoredPosition: {x: 37, y: -251}
   m_SizeDelta: {x: 224, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &990972536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990972534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd44da61c28d54bf39844d93693ea1b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Start Scene
 --- !u!114 &990972537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,16 +523,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990972536}
+      - m_Target: {fileID: 990972540}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
         m_MethodName: SwitchScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Start Scene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &990972538
@@ -586,6 +573,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990972534}
   m_CullTransparentMesh: 1
+--- !u!114 &990972540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990972534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727e08faffcb1734ebc34a5bcb7a8ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018311728
 GameObject:
   m_ObjectHideFlags: 0
