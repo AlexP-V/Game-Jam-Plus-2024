@@ -930,6 +930,7 @@ MonoBehaviour:
   initialSensitivity: 10
   sens: 0
   playerIndex: 0
+  body: {fileID: 8246594460933395849}
   constrainMovement: 0
   rotationOffset: 0
 --- !u!114 &4174952484859464828
