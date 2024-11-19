@@ -3,7 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(HingeJoint2D))]
 public class ClimbingHand : MonoBehaviour
 {
-    public bool arrow;
     public float climbSpeed = 5;
     public float rotationForce = 100;
     float rotationValue = 0;

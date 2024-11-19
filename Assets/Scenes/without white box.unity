@@ -1979,6 +1979,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 392638189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &123952418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 764413762514823233, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+  m_PrefabInstance: {fileID: 1494104368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &125971606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +4959,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 392638189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &478267473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3464038799313631638, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+  m_PrefabInstance: {fileID: 561895641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &478267474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5258176123841037406, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+  m_PrefabInstance: {fileID: 561895641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &478267481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478267473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a9ad7d87d062d4290cc6f130f54482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
+  jumpForce: 30
+  playerIndex: 1
+  jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
+  moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
+  slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
+  highFriction: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
 --- !u!1 &502014813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,6 +5967,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1204887327165091782, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 478267474}
     - target: {fileID: 2355134931492225472, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.0805492
@@ -6053,10 +6091,14 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7979453857186163887, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3464038799313631638, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 478267481}
   m_SourcePrefab: {fileID: 100100000, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
 --- !u!1 &561895642 stripped
 GameObject:
@@ -15408,6 +15450,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 889542379
       objectReference: {fileID: 0}
+    - target: {fileID: 3040382785842077201, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 1494104370}
     - target: {fileID: 6033291686517216044, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_SortingLayer
       value: 8
@@ -15472,13 +15518,17 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 889542379
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8246594460933395849, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 519420032}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 764413762514823233, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1494104387}
   m_SourcePrefab: {fileID: 100100000, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
 --- !u!1 &1494104369 stripped
 GameObject:
@@ -15495,6 +15545,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7836194968138303779, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
   m_PrefabInstance: {fileID: 1494104368}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1494104387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123952418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a9ad7d87d062d4290cc6f130f54482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
+  jumpForce: 30
+  playerIndex: 0
+  jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
+  moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
+  slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
+  highFriction: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
 --- !u!1001 &1494652956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18163,15 +18232,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scenePrefabInstances:
   - _gameObject: {fileID: 2110039157}
-    _prefab: Assets/PlayerInputManager.prefab
+    _prefab: Assets/Scenes/PlayerInputManager.prefab
   - _gameObject: {fileID: 924576726}
     _prefab: Assets/Stick.prefab
   - _gameObject: {fileID: 1494104369}
-    _prefab: Assets/JoelTemp/Player1.prefab
+    _prefab: Assets/Scenes/Player1.prefab
   - _gameObject: {fileID: 1494104371}
     _prefab: Assets/Kevin Temp/Maleplayer2.psb
   - _gameObject: {fileID: 561895642}
-    _prefab: Assets/JoelTemp/Player2 Variant.prefab
+    _prefab: Assets/Scenes/Player2 Variant.prefab
   - _gameObject: {fileID: 561895643}
     _prefab: Assets/Kevin Temp/Femaleplayer2.psb
   - _gameObject: {fileID: 1494652957}

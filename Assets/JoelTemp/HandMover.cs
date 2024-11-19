@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveHand : MonoBehaviour
+public class HandMover : MonoBehaviour
 {
     public float initialSensitivity = 10f;
     [HideInInspector] public float sens; 

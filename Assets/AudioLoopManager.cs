@@ -20,7 +20,7 @@ public class AudioLoopManager : MonoBehaviour
     void Start()
     {
         audioLoops = new AudioSource[audioClips.Length];
-        Debug.Log(audioLoops.Length);
+
         // Start all loops but only set volume for the first loop, others are muted
         for (int i = 0; i < audioLoops.Length; i++)
         {

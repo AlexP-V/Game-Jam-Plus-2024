@@ -8,19 +8,19 @@ using static UnityEngine.InputSystem.InputAction;
 public class PlayerInputHandler : MonoBehaviour
 {
     PlayerInput playerInput;
-    NewPlayerMovement playerMovement;
-    MoveHand handMover;
+    PlayerMovement playerMovement;
+    HandMover handMover;
     ClimbingHand climbingHand;
     PickUpObject pickUpObject;
    
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        var playerMovers = FindObjectsOfType<NewPlayerMovement>();
+        var playerMovers = FindObjectsOfType<PlayerMovement>();
         var index = playerInput.playerIndex;
         playerMovement = playerMovers.FirstOrDefault(mover => mover.getPlayerIndex() == index);
 
-        var handMovers = FindObjectsOfType<MoveHand>();
+        var handMovers = FindObjectsOfType<HandMover>();
         handMover = handMovers.FirstOrDefault(mover => mover.getPlayerIndex() == index);
 
         var climbingHands = FindObjectsOfType<ClimbingHand>();

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8246594460933395849}
   - component: {fileID: 2133979479078836053}
-  - component: {fileID: 6067955816888827256}
+  - component: {fileID: 7791004359007180853}
   - component: {fileID: 8385697426836948864}
   - component: {fileID: 1830562477860015926}
   - component: {fileID: 8290607549965964354}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 889542379
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 1, b: 0.14433002, a: 1}
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6067955816888827256
+--- !u!114 &7791004359007180853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 764413762514823233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3e77a367410a7459b87a9320c76ec0, type: 3}
+  m_Script: {fileID: 11500000, guid: d4a9ad7d87d062d4290cc6f130f54482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
@@ -111,6 +111,7 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
   moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
   slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
+  highFriction: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
 --- !u!114 &8385697426836948864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8232566e4980e4b44aa0aeeb4b44b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: 0
   climbSpeed: 0.3
   rotationForce: 1000
   playerIndex: 0

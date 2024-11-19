@@ -25,8 +25,7 @@ public class PickUpObject : MonoBehaviour
         hinge.enabled = false;
         rigidBody = GetComponent<Rigidbody2D>();
         // Initialize the AudioSource component
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
+        if (TryGetComponent<AudioSource>(out _) == false)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
@@ -45,7 +44,7 @@ public class PickUpObject : MonoBehaviour
 
         if (!IsGrabInput)
         {
-            if (IsHolding && dropClip != null)
+            if (IsHolding)
             {
                 audioSource.PlayOneShot(dropClip);
             }
@@ -66,7 +65,7 @@ public class PickUpObject : MonoBehaviour
         bool isPickingUp = rb != null;
 
         // Play pickup sound when holding starts, drop sound when holding stops
-        if (isPickingUp && pickUpClip != null)
+        if (isPickingUp)
         {
             audioSource.PlayOneShot(pickUpClip);
         }
