@@ -78,17 +78,4 @@ public class PickUpObject : MonoBehaviour
         // Adjust mass based on whether the player is holding something or not
         rigidBody.mass = isPickingUp ? 1f : 0f;
     }
-
-
-    void Update()
-    {
-        //if (IsHolding && !groundCheck.isGrounded)
-        //{
-        //    transform.GetComponent<MoveHand>().enabled = false;
-        //}
-        //else
-        //{
-        //    transform.GetComponent<MoveHand>().enabled = true;
-        //}
-    }
 }

@@ -16,18 +16,17 @@ public class PlayerInputHandler : MonoBehaviour
     void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        var playerMovers = FindObjectsOfType<PlayerMovement>();
-        var index = playerInput.playerIndex;
+        PlayerMovement[] playerMovers = FindObjectsOfType<PlayerMovement>();
+        int index = playerInput.playerIndex;
         playerMovement = playerMovers.FirstOrDefault(mover => mover.getPlayerIndex() == index);
 
-        var handMovers = FindObjectsOfType<HandMover>();
-        handMover = handMovers.FirstOrDefault(mover => mover.getPlayerIndex() == index);
+        Transform player = playerMovement.transform.parent;
 
-        var climbingHands = FindObjectsOfType<ClimbingHand>();
-        climbingHand = climbingHands.FirstOrDefault(mover => mover.getPlayerIndex() == index);
+        handMover = player.GetComponentInChildren<HandMover>();
 
-        var objectPickers = FindObjectsOfType<PickUpObject>();
-        pickUpObject = objectPickers.FirstOrDefault(pickUpObject => pickUpObject.getPlayerIndex() == index);
+        climbingHand = player.GetComponentInChildren<ClimbingHand>();
+
+        pickUpObject = player.GetComponentInChildren<PickUpObject>();
     }
 
     public void OnJumpInput(CallbackContext context)

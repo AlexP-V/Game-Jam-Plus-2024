@@ -26,11 +26,7 @@ public class HandMover : MonoBehaviour
 
     public void SetTargetDir(Vector3 newTarget)
     {
-       // if (!constrainMovement)
-        //{
-            handTarget = newTarget;
-            //handTarget.Normalize();
-        //}
+        handTarget = newTarget;
     }
 
     public Vector2 getTargetDir()
