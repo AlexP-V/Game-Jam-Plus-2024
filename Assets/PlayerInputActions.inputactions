@@ -205,6 +205,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "b25ce019-ab8b-4421-a685-3572db6c0814",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "2902e24c-08d2-46f8-aaa4-0790c1ca4502",
                     "path": "1DAxis",

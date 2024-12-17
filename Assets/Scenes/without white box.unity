@@ -5966,6 +5966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 250349457557757355, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+      propertyPath: rotationForce
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: 1204887327165091782, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
       propertyPath: body
       value: 
@@ -9061,6 +9065,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6469123891329973978, guid: c68a63156a77bea43ac011c1a09e0558, type: 3}
   m_PrefabInstance: {fileID: 1098515651}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &924576731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924576726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b51f35b6ece2a4fb13744d94a87f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRotationSpeed: 30
 --- !u!1 &961445657
 GameObject:
   m_ObjectHideFlags: 0
@@ -10380,6 +10397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.376
       objectReference: {fileID: 0}
+    - target: {fileID: 5815930074264574659, guid: c68a63156a77bea43ac011c1a09e0558, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6469123891329973978, guid: c68a63156a77bea43ac011c1a09e0558, type: 3}
       propertyPath: m_Name
       value: Stick (2)
@@ -10391,7 +10412,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6469123891329973978, guid: c68a63156a77bea43ac011c1a09e0558, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 924576731}
   m_SourcePrefab: {fileID: 100100000, guid: c68a63156a77bea43ac011c1a09e0558, type: 3}
 --- !u!1 &1098947896
 GameObject:
@@ -15453,6 +15477,10 @@ PrefabInstance:
       propertyPath: body
       value: 
       objectReference: {fileID: 1494104370}
+    - target: {fileID: 4174952484859464828, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: rotationForce
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: 6033291686517216044, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_SortingLayer
       value: 8
@@ -15464,6 +15492,10 @@ PrefabInstance:
     - target: {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: jumpForce
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942801773671524257, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7270420633675797872, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_SortingLayer
@@ -18231,19 +18263,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scenePrefabInstances:
   - _gameObject: {fileID: 2110039157}
-    _prefab: Assets/Scenes/PlayerInputManager.prefab
+    _prefab: Assets/Prefabs/PlayerInputManager.prefab
   - _gameObject: {fileID: 924576726}
     _prefab: Assets/Stick.prefab
   - _gameObject: {fileID: 1494104369}
-    _prefab: Assets/Scenes/Player1.prefab
+    _prefab: Assets/Prefabs/Players/Player1.prefab
   - _gameObject: {fileID: 1494104371}
-    _prefab: Assets/Kevin Temp/Maleplayer2.psb
+    _prefab: Assets/Devs/Kevin Temp/Maleplayer2.psb
   - _gameObject: {fileID: 561895642}
-    _prefab: Assets/Scenes/Player2 Variant.prefab
+    _prefab: Assets/Prefabs/Players/Player2 Variant.prefab
   - _gameObject: {fileID: 561895643}
-    _prefab: Assets/Kevin Temp/Femaleplayer2.psb
+    _prefab: Assets/Devs/Kevin Temp/Femaleplayer2.psb
   - _gameObject: {fileID: 1494652957}
-    _prefab: Assets/MusicHolder.prefab
+    _prefab: Assets/Prefabs/MusicHolder.prefab
 --- !u!4 &1827145623
 Transform:
   m_ObjectHideFlags: 11
@@ -19556,13 +19588,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890429387}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.0000003768438}
+  m_LocalRotation: {x: 0, y: 0, z: 0.96682334, w: 0.25544596}
   m_LocalPosition: {x: 118.48828, y: 24.30901, z: 0}
   m_LocalScale: {x: 2.9300005, y: 0.06000002, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 150.4}
 --- !u!61 &1890429392
 BoxCollider2D:
   m_ObjectHideFlags: 0
