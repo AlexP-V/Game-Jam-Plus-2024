@@ -10,16 +10,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] AudioClip jumpClip;
     [SerializeField] AudioClip moveClip;
 
-    Animator animator;
-
-    DistanceJoint2D handjoint;
+    Animator animator;    
 
     Rigidbody2D rb;
     new Collider2D collider;
     GroundCheck groundCheck;
     Vector2 moveInput;
-    Transform hand;
-    HandMover handMover;
+   
     AudioSource audioSource;
     Vector3 initialScale;
     public PhysicsMaterial2D slipperyMaterial, highFriction;
@@ -30,10 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
-        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();
-        handjoint = GetComponent<DistanceJoint2D>();
-        hand = handjoint.connectedBody.transform;
-        handMover = hand.GetComponent<HandMover>();
+        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();        
 
         // Initialize the audio source component
         if (TryGetComponent<AudioSource>(out _) == false)
@@ -75,34 +69,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Add force for movement
-        rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force);
-
-        // Play movement sound if player is moving and the sound is not already playing
-        // if (moveInput.x != 0)
-        // {
-        //     if (!isMoving && moveClip != null)
-        //     {
-        //         audioSource.loop = true;
-        //         audioSource.clip = moveClip;
-        //         audioSource.Play();
-        //         isMoving = true;
-        //     }
-        // }
-        // else
-        // {
-        //     // Stop movement sound when player stops moving
-        //     if (isMoving)
-        //     {
-        //         audioSource.Stop();
-        //         isMoving = false;
-        //     }
-        // }
-
-        // Hand joint constraint logic
-        Vector2 handTargetDir = hand.position - transform.position;
-        bool constrainHands = handTargetDir.magnitude > handjoint.distance * .9f;
-        handMover.constrainMovement = constrainHands;
-
+        rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force); 
+                    
         bool beSlippery = !groundCheck.isGrounded || IsMoveInput;
         collider.sharedMaterial = beSlippery ? slipperyMaterial : highFriction;
     }
