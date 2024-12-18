@@ -1,0 +1,32 @@
+What need to be done for jan 12?
+
+- Player movement:
+	. rotation speed limit
+	. Hand movement in air
+	. Stronger hands on the ground
+	. Fix friction materials in movement script
+	. Make climbing intuitive somehow
+
+- Script optimization	
+
+- Onboarding
+	. How to teach player how the mechanics works
+
+- Game structure
+	. Multiple levels vs One long level
+	. Collectibles?
+	. Timer?
+	. Level UI - Jan 12 only one level
+
+- Spawning of player
+	. How does player choose their character
+
+- Sound and music
+	. Nice music for the levels
+
+- Art
+	. New wall paper for wall background
+	. More obstacle assets
+	. Goal
+	. Separate foreground and background
+	. Add arms biceps and forearms 
