@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10f;
-    public float jumpForce = 70f;
+    [SerializeField] private PlayerSettings settings;
+    private float speed = 10f;
+    private float jumpForce = 70f;
     [SerializeField] int playerIndex = 0;
 
     // Audio clips for movement and jump
@@ -27,7 +28,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
-        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>();        
+        groundCheck = transform.parent.GetComponentInChildren<GroundCheck>(); 
+
+        ApplySettings();       
 
         // Initialize the audio source component
         if (TryGetComponent<AudioSource>(out _) == false)
@@ -38,6 +41,15 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         initialScale = transform.localScale;
+    }
+
+    void ApplySettings()
+    {
+        speed = settings.movementSpeed;
+        jumpForce = settings.jumpForce;
+        rb.gravityScale = settings.gravityScale;
+        collider.sharedMaterial.friction = settings.friction;
+        rb.drag = settings.airResistance;
     }
 
     public int getPlayerIndex()
@@ -54,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (groundCheck.isGrounded)
         {
+            jumpForce = settings.jumpForce;
+
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
             // Play the jump sound if the audio clip is assigned
@@ -68,6 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        ApplySettings(); 
+
         // Add force for movement
         rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force); 
                     

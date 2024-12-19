@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: playerIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: highFriction
+      value: 
+      objectReference: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
+    - target: {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: slipperyMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
     - target: {fileID: 7327485145081740037, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_Name
       value: Player2 Variant

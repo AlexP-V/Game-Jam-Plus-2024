@@ -3,8 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(HingeJoint2D))]
 public class ClimbingHand : MonoBehaviour
 {
-    public float climbSpeed = 5;
-    public float rotationForce = 100;
+    [SerializeField] PlayerSettings settings;
+    float climbSpeed = 5;
+    float rotationForce = 100;
     float rotationValue = 0;
     [SerializeField] int playerIndex = 0;
 
@@ -17,6 +18,13 @@ public class ClimbingHand : MonoBehaviour
     {
         hinge = GetComponent<HingeJoint2D>();
         animator = transform.parent.GetComponentInChildren<Animator>();
+        ApplySettings();
+    }
+
+    void ApplySettings()
+    {
+        climbSpeed = settings.climbSpeed;
+        rotationForce = settings.handRotationForce;
     }
 
     public int getPlayerIndex()
@@ -45,6 +53,8 @@ public class ClimbingHand : MonoBehaviour
 
     void FixedUpdate()
     {
+        ApplySettings();
+
         float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climbValue * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
         hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 

@@ -102,15 +102,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 764413762514823233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3e77a367410a7459b87a9320c76ec0, type: 3}
+  m_Script: {fileID: 11500000, guid: d4a9ad7d87d062d4290cc6f130f54482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
-  jumpForce: 30
+  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
   playerIndex: 0
-  jumpClip: {fileID: 8300000, guid: 2da42ec8f36744823b45148db514585e, type: 3}
-  moveClip: {fileID: 8300000, guid: 45d91ab1af55a4e9b89506bcb3cf6acb, type: 3}
+  jumpClip: {fileID: 0}
+  moveClip: {fileID: 0}
   slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
+  highFriction: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
 --- !u!114 &8385697426836948864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515169ca22499d24a9d21a83d06d2b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
   maxSpeed: 10
 --- !u!50 &1830562477860015926
 Rigidbody2D:
@@ -927,9 +928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fc3663207bad043b5ac3436d40fa0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
   initialSensitivity: 10
   sens: 0
   playerIndex: 0
+  body: {fileID: 8246594460933395849}
   constrainMovement: 0
   rotationOffset: 0
 --- !u!114 &4174952484859464828
@@ -944,9 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8232566e4980e4b44aa0aeeb4b44b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: 0
-  climbSpeed: 0.3
-  rotationForce: 1000
+  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
   playerIndex: 0
 --- !u!50 &6942801773671524257
 Rigidbody2D:
@@ -1057,6 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515169ca22499d24a9d21a83d06d2b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
   maxSpeed: 7
 --- !u!1001 &7734947830213175454
 PrefabInstance:

@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class CapZRotation : MonoBehaviour
 {
+    [SerializeField] PlayerSettings settings;
     // Maximum allowed rotation speed along the Z-axis (degrees per second)
-    public float maxRotationSpeed = 45f;
+    float maxRotationSpeed = 45f;
 
     // Reference to the Rigidbody2D component
     private Rigidbody2D rb2D;
@@ -18,12 +19,19 @@ public class CapZRotation : MonoBehaviour
             Debug.LogError("No Rigidbody2D component found on this GameObject.");
         }
     }
+
+    void ApplySettings()
+    {
+        maxRotationSpeed = settings.maxHeldObjectRotationSpeed;
+    }
     
 
     void FixedUpdate()
     {
         if (rb2D == null) return;
 
+        ApplySettings();
+        
         // Get the current angular velocity
         float angularVelocity = rb2D.angularVelocity;
 

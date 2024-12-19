@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class HandMover : MonoBehaviour
 {
+    [SerializeField] PlayerSettings settings;
     public float initialSensitivity = 10f;
     [HideInInspector] public float sens; 
     Rigidbody2D rb;
@@ -16,7 +17,12 @@ public class HandMover : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sens = initialSensitivity;
+        ApplySettings();
+    }
+
+    void ApplySettings()
+    {
+        sens = settings.handSensitivity;
     }
 
     public int getPlayerIndex()
@@ -36,6 +42,7 @@ public class HandMover : MonoBehaviour
 
     void FixedUpdate() 
     {
+        ApplySettings();
         Vector2 moveDir = -rb.position + (Vector2)(handTarget + body.position);
         rb.velocity = moveDir * sens;
     }
