@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf50be4b043f28e44a5567838c1e3b11, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
-  movementSpeed: 1137
+  movementSpeed: 5000
   maxXSpeed: 10
   jumpForce: 78
   handSensitivity: 10
   climbSpeed: 0.3
   handRotationForce: 15000
   maxHeldObjectRotationSpeed: 1
-  mass: 1
+  mass: 10
   gravityScale: 1
-  friction: 10
-  airResistance: 0.1
+  friction: 0
+  airResistance: 1

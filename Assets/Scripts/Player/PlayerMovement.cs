@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerSettings settings;
-    private float speed = 10f;
-    private float jumpForce = 70f;
+    public float speed = 10f;
+    public float jumpForce = 70f;
     [SerializeField] int playerIndex = 0;
 
     // Audio clips for movement and jump
