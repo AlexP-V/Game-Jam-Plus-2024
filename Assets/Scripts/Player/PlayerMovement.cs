@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 theScale = transform.localScale;
             transform.localScale = new Vector3(-initialScale.x, theScale.y, theScale.z);
-        }
+        }        
     }
 }
 

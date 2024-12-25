@@ -14,10 +14,7 @@ public class CapZRotation : MonoBehaviour
     {
         // Get the Rigidbody2D component attached to the object
         rb2D = GetComponent<Rigidbody2D>();
-        if (rb2D == null)
-        {
-            Debug.LogError("No Rigidbody2D component found on this GameObject.");
-        }
+        
     }
 
     void ApplySettings()
