@@ -106,6 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
+  speed: 10
+  jumpForce: 70
   playerIndex: 0
   jumpClip: {fileID: 0}
   moveClip: {fileID: 0}
@@ -161,7 +163,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 764413762514823233}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 64aba92cd81349841ad59064322bd5e0, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -929,11 +931,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
-  initialSensitivity: 10
   sens: 0
   playerIndex: 0
   body: {fileID: 8246594460933395849}
-  constrainMovement: 0
   rotationOffset: 0
 --- !u!114 &4174952484859464828
 MonoBehaviour:
@@ -947,7 +947,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8232566e4980e4b44aa0aeeb4b44b79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
+  climbSpeed: 0.3
+  rotationForce: 17000
+  angularDrag: 35
+  angularVelocityThreshold: 100
   playerIndex: 0
 --- !u!50 &6942801773671524257
 Rigidbody2D:
