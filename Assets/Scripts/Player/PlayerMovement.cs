@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
     public void setInputVector(Vector2 direction)
     {
         moveInput = direction;
+
+        Debug.Log($"Horizontal movement input: {moveInput.x}");
     }
 
     public void Jump()

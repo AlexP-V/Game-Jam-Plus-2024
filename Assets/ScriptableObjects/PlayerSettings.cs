@@ -11,8 +11,7 @@ public class PlayerSettings : ScriptableObject
     public float handSensitivity = 10f;
     public float climbSpeed = 10f;
     public float handRotationForce = 10f;
-    public float maxHeldObjectRotationSpeed = 45f;
-
+    
     
     [Header("Rigidbody")]
     public float mass = 1;
