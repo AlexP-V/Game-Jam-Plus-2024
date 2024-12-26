@@ -3,14 +3,14 @@ using UnityEngine;
 public class HandMover : MonoBehaviour
 {
     [SerializeField] PlayerSettings settings;
-    public float initialSensitivity = 10f;
+    //public float initialSensitivity = 10f;
     [HideInInspector] public float sens; 
     Rigidbody2D rb;
     Vector3 handTarget;
     [SerializeField] int playerIndex = 0;
     [SerializeField] Transform body;
 
-    [HideInInspector] public bool constrainMovement = false;
+    //[HideInInspector] public bool constrainMovement = false;
 
     public float rotationOffset = 0;    
 

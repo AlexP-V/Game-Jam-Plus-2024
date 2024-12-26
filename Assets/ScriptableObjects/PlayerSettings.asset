@@ -17,7 +17,7 @@ MonoBehaviour:
   jumpForce: 78
   handSensitivity: 10
   climbSpeed: 0.3
-  handRotationForce: 15000
+  handRotationForce: 17000
   maxHeldObjectRotationSpeed: 1
   mass: 10
   gravityScale: 1
