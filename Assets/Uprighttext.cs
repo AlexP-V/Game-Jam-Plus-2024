@@ -1,19 +1,12 @@
 using UnityEngine;
 
-public class UprightText : MonoBehaviour
+public class FreezeRotation : MonoBehaviour
 {
-    //public Transform target; // The object the text should follow
-
     void LateUpdate()
     {
-       // if (target != null)
-       // {
-            // Set the position to match the target
-            //transform.position = target.position;
-
-            // Keep the rotation identity (upright)
-            transform.rotation = Quaternion.identity;
-       // }
+        // Reset the rotation to ensure the text stays upright
+        transform.rotation = Quaternion.identity;
     }
 }
+
 

@@ -43,6 +43,7 @@ public class HandMover : MonoBehaviour
     void FixedUpdate() 
     {
         ApplySettings();
+        // Same as handpos - bodyPos (hand relative pos to body) + input
         Vector2 moveDir = -rb.position + (Vector2)(handTarget + body.position);
         rb.velocity = moveDir * sens;
     }

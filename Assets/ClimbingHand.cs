@@ -15,10 +15,21 @@ public class ClimbingHand : MonoBehaviour
     float climbValue = 0;
 
     HingeJoint2D hinge;
+
+    [SerializeField] PlayerSettings settings;
+
     void Start()
     {
         hinge = GetComponent<HingeJoint2D>();
         animator = transform.parent.GetComponentInChildren<Animator>();
+    }
+
+    void ApplySettings()
+    {
+        climbSpeed = settings.climbSpeed;
+        rotationForce = settings.handRotationForce;
+        angularDrag = settings.stickRotationResistance;
+        angularVelocityThreshold = settings.stickRotationThreshold;
     }
 
     public int getPlayerIndex()
@@ -47,6 +58,8 @@ public class ClimbingHand : MonoBehaviour
 
     void FixedUpdate()
     {
+        ApplySettings();
+
         float newAnchorX = Mathf.Clamp(hinge.connectedAnchor.x + (climbValue * climbSpeed * Time.fixedDeltaTime) / transform.lossyScale.y, -.5f, .5f);
         hinge.connectedAnchor = new Vector2(newAnchorX, 0);
 

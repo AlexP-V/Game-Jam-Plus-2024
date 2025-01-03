@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;    
 
     Rigidbody2D rb;
-    new Collider2D collider;
+    Collider2D collider;
     GroundCheck groundCheck;
     Vector2 moveInput;
    
@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
     {
         speed = settings.movementSpeed;
         jumpForce = settings.jumpForce;
+        rb.mass = settings.mass;
         rb.gravityScale = settings.gravityScale;
         collider.sharedMaterial.friction = settings.friction;
         rb.drag = settings.airResistance;
