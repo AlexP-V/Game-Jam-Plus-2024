@@ -20,7 +20,7 @@ MonoBehaviour:
   handRotationForce: 17000
   stickAirResistance: 0
   stickRotationResistance: 50
-  stickRotationThreshold: 100
+  stickRotationThreshold: 90
   mass: 2
   gravityScale: 2
   friction: 0.3

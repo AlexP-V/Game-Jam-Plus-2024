@@ -3,16 +3,13 @@ using UnityEngine;
 public class HandMover : MonoBehaviour
 {
     [SerializeField] PlayerSettings settings;
-    //public float initialSensitivity = 10f;
-    [HideInInspector] public float sens; 
-    Rigidbody2D rb;
-    Vector3 handTarget;
-    [SerializeField] int playerIndex = 0;
-    [SerializeField] Transform body;
+    [HideInInspector] public float sens;
+    private Rigidbody2D rb;
+    private Vector3 handTarget;
+    [SerializeField] private int playerIndex = 0;
+    [SerializeField] private Transform body;
 
-    //[HideInInspector] public bool constrainMovement = false;
-
-    public float rotationOffset = 0;    
+    public float rotationOffset = 0;
 
     void Start()
     {
@@ -28,7 +25,7 @@ public class HandMover : MonoBehaviour
     public int getPlayerIndex()
     {
         return playerIndex;
-    }   
+    }
 
     public void SetTargetDir(Vector3 newTarget)
     {
@@ -38,13 +35,18 @@ public class HandMover : MonoBehaviour
     public Vector2 getTargetDir()
     {
         return handTarget;
-    }   
+    }
 
-    void FixedUpdate() 
+    public Vector2 GetMoveDir()
+    {
+        // Compute moveDir as in FixedUpdate
+        return -rb.position + (Vector2)(handTarget + body.position);
+    }
+
+    void FixedUpdate()
     {
         ApplySettings();
-        // Same as handpos - bodyPos (hand relative pos to body) + input
-        Vector2 moveDir = -rb.position + (Vector2)(handTarget + body.position);
+        Vector2 moveDir = GetMoveDir();
         rb.velocity = moveDir * sens;
     }
 
