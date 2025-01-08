@@ -11,7 +11,7 @@ public class PickUpObject : MonoBehaviour
     public AudioClip dropClip;
     private AudioSource audioSource;
 
-    bool IsHolding => hinge.connectedBody != null;
+    public bool IsHolding => hinge.connectedBody != null;
     bool IsGrabInput = false;
 
     [SerializeField] int playerIndex = 0;
