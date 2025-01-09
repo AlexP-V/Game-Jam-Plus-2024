@@ -26,7 +26,7 @@ public class GroundCheck : MonoBehaviour
         
             isGrounded = false;
             animator.SetBool("inAir", true);
-            //Debug.Log("Not Grounded");
+            Debug.Log("Not Grounded");
         
     }
 }
