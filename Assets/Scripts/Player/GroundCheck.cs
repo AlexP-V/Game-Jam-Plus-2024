@@ -14,19 +14,23 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-       
+        if (other.CompareTag("Ground") || other.CompareTag("Player"))
+        {
             isGrounded = true;
             animator.SetBool("inAir", false);
             Debug.Log("Grounded");
-        
+
+        }
     }
     
     void OnTriggerExit2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Ground") || other.CompareTag("Player"))
+        {
             isGrounded = false;
             animator.SetBool("inAir", true);
             Debug.Log("Not Grounded");
+        }          
         
     }
 }
