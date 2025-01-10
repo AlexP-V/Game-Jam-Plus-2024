@@ -14,7 +14,7 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ground") || other.CompareTag("Player"))
+        if (other.CompareTag("Ground") || other.CompareTag("Player 1") || other.CompareTag("Player 2"))
         {
             isGrounded = true;
             animator.SetBool("inAir", false);
@@ -25,7 +25,7 @@ public class GroundCheck : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Ground") || other.CompareTag("Player"))
+        if (other.CompareTag("Ground") || other.CompareTag("Player 1") || other.CompareTag("Player 2"))
         {
             isGrounded = false;
             animator.SetBool("inAir", true);
