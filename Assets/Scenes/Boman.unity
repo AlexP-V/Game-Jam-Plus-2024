@@ -860,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5298244233830548885, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 45200932c666dee46a6cda36c4af2be6, type: 2}
     - target: {fileID: 5414840779203047280, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
       propertyPath: m_IsActive
       value: 1

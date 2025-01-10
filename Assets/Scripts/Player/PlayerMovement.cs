@@ -14,20 +14,20 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;    
 
     Rigidbody2D rb;
-    Collider2D collider;
+    Collider2D playerCollider;
     GroundCheck groundCheck;
     Vector2 moveInput;
    
     AudioSource audioSource;
     Vector3 initialScale;
-    public PhysicsMaterial2D slipperyMaterial, highFriction;
 
     bool IsMoveInput => Mathf.Abs(moveInput.x) > .1f;
 
     void Awake()
     {
+        
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
+        playerCollider = GetComponent<Collider2D>();
         groundCheck = transform.parent.GetComponentInChildren<GroundCheck>(); 
 
         ApplySettings();       
@@ -49,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
         jumpForce = settings.jumpForce;
         rb.mass = settings.mass;
         rb.gravityScale = settings.gravityScale;
-        collider.sharedMaterial.friction = settings.friction;
         rb.drag = settings.airResistance;
     }
 
@@ -86,10 +85,10 @@ public class PlayerMovement : MonoBehaviour
         ApplySettings(); 
 
         // Add force for movement
-        rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force); 
-                    
+        rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force);
+
         bool beSlippery = !groundCheck.isGrounded || IsMoveInput;
-        collider.sharedMaterial = beSlippery ? slipperyMaterial : highFriction;
+        playerCollider.sharedMaterial.friction = beSlippery ? 0.0f : settings.friction;
     }
 
     void Update()

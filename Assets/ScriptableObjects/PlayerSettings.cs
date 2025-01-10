@@ -15,11 +15,10 @@ public class PlayerSettings : ScriptableObject
     public float stickRotationResistance = 0.1f;
     public float stickRotationThreshold = 0.1f;
 
-
     [Header("Player Rigidbody")]
     public float mass = 1;
     public float gravityScale = 1;
-    public float friction = 0.1f;
+    public float friction = 100f;
     public float airResistance = 0.1f;
 
     [Header("Stick Rigidbody")]

@@ -23,7 +23,8 @@ MonoBehaviour:
   stickRotationThreshold: 90
   mass: 2
   gravityScale: 2
-  friction: 0.3
+  moveFriction: 0
+  restFriction: 100
   airResistance: 0
   stickMass: 1
   stickGravityScale: 1
