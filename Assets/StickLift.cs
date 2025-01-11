@@ -52,11 +52,6 @@ public class StickLift : MonoBehaviour
                 moveDir = player2HandMover.GetMoveDir();
                 rb.velocity = moveDir * player2HandMover.sens * 4;
             }
-            else
-            {
-                // No velocity adjustment if both or neither are grounded
-                rb.velocity = rb.velocity; // Preserve existing velocity for free fall
-            }
         }
     }
 }

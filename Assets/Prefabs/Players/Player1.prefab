@@ -105,14 +105,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4a9ad7d87d062d4290cc6f130f54482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
+  settings: {fileID: 11400000, guid: f71b78b1096b1094f8b14f53d67e6639, type: 2}
   speed: 10
   jumpForce: 70
   playerIndex: 0
   jumpClip: {fileID: 0}
   moveClip: {fileID: 0}
-  slipperyMaterial: {fileID: 6200000, guid: 5ce266958b48944439b94ee3982322b7, type: 2}
-  highFriction: {fileID: 6200000, guid: b52f9d810ac2c0b4595c4b0dd8ed1cda, type: 2}
+  slipperyMaterial: {fileID: 6200000, guid: cf44b09d54bad484b975d322680b62c3, type: 2}
 --- !u!114 &8385697426836948864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515169ca22499d24a9d21a83d06d2b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
+  settings: {fileID: 11400000, guid: f71b78b1096b1094f8b14f53d67e6639, type: 2}
   maxSpeed: 10
 --- !u!50 &1830562477860015926
 Rigidbody2D:
@@ -139,8 +138,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDrag: 0.3
+  m_Mass: 1
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -930,10 +929,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fc3663207bad043b5ac3436d40fa0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: e8c58027c174f13439326f6b3e74e9bd, type: 2}
+  settings: {fileID: 11400000, guid: f71b78b1096b1094f8b14f53d67e6639, type: 2}
   sens: 0
+  pushForce: 200
+  HandMulti: 1.2
+  playerGroundCheck: {fileID: 7136147640173708027}
+  playerPickUp: {fileID: 8635289582700223339}
+  friendGroundCheck: {fileID: 0}
+  friendPickUp: {fileID: 0}
+  stickGroundCheck: {fileID: 0}
   playerIndex: 0
   body: {fileID: 8246594460933395849}
+  bodyRb: {fileID: 1830562477860015926}
   rotationOffset: 0
 --- !u!114 &4174952484859464828
 MonoBehaviour:
@@ -952,6 +959,7 @@ MonoBehaviour:
   angularDrag: 35
   angularVelocityThreshold: 100
   playerIndex: 0
+  settings: {fileID: 0}
 --- !u!50 &6942801773671524257
 Rigidbody2D:
   serializedVersion: 4

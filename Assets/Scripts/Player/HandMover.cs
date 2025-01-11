@@ -60,10 +60,24 @@ public class HandMover : MonoBehaviour
     void FixedUpdate()
     {
         ApplySettings();
-        Vector2 moveDir = GetMoveDir();
-        rb.velocity = moveDir * sens;
 
-        
+        Vector2 moveDir = GetMoveDir();
+        if (playerGroundCheck.isGrounded)
+        {           
+            rb.velocity = moveDir * sens;
+        }
+        else if (playerPickUp.IsHolding)
+        {
+            // Calculate movement force
+            Vector2 movementForce = moveDir * sens;
+
+            // Calculate gravity effect on velocity
+            Vector2 gravityVelocity = rb.velocity + Physics2D.gravity * bodyRb.gravityScale * Time.fixedDeltaTime;
+
+            // Combine movement and gravity
+            rb.velocity = new Vector2(movementForce.x, gravityVelocity.y);
+        }
+
         bool playerIsGrounded = playerGroundCheck != null && playerGroundCheck.isGrounded;
 
         bool friendIsGrounded = friendGroundCheck != null && friendGroundCheck.isGrounded;
@@ -99,8 +113,7 @@ public class HandMover : MonoBehaviour
                 }
 
             }
-        }         
-
+        }
     }
 
     void RotateInDirection(Transform transform, Vector3 direction)

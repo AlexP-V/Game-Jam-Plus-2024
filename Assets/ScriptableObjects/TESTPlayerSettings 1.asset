@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 200
   maxXSpeed: 10
-  jumpForce: 20
+  jumpForce: 17
   handSensitivity: 10
   climbSpeed: 0.3
-  handRotationForce: 17000
+  handRotationForce: 8000
   stickAirResistance: 0
   stickRotationResistance: 50
   stickRotationThreshold: 90
   mass: 2
   gravityScale: 2
-  friction: 0.6
+  friction: 2
   airResistance: 0
   stickMass: 1
-  stickGravityScale: 1
-  stickFriction: 100
+  stickGravityScale: 2
+  stickFriction: 3

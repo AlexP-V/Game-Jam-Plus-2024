@@ -46,7 +46,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnGrabInput(CallbackContext context)
     {
-        Debug.Log("Grab input!");
+        //Debug.Log("Grab input!");
         pickUpObject.SetGrabInput();
     }
 
