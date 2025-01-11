@@ -884,6 +884,10 @@ PrefabInstance:
       propertyPath: settings
       value: 
       objectReference: {fileID: 11400000, guid: f71b78b1096b1094f8b14f53d67e6639, type: 2}
+    - target: {fileID: 7979453857186163887, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
+      propertyPath: slipperyMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: cf44b09d54bad484b975d322680b62c3, type: 2}
     - target: {fileID: 8672727041391387212, guid: 7dcebeb6b267199429ac9c415797d44d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 0
@@ -2549,6 +2553,10 @@ PrefabInstance:
       propertyPath: settings
       value: 
       objectReference: {fileID: 11400000, guid: f71b78b1096b1094f8b14f53d67e6639, type: 2}
+    - target: {fileID: 6067955816888827256, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
+      propertyPath: slipperyMaterial
+      value: 
+      objectReference: {fileID: 6200000, guid: cf44b09d54bad484b975d322680b62c3, type: 2}
     - target: {fileID: 6942801773671524257, guid: bc9553c0f8bfabe4f9b34db2a1d4b6b9, type: 3}
       propertyPath: m_Mass
       value: 0.0001

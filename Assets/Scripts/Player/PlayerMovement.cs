@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
     Collider2D playerCollider;
+    PhysicsMaterial2D playerMaterial;
+    [SerializeField] PhysicsMaterial2D slipperyMaterial;
     GroundCheck groundCheck;
     Vector2 moveInput;
    
@@ -28,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<Collider2D>();
+        playerMaterial = playerCollider.sharedMaterial;
         groundCheck = transform.parent.GetComponentInChildren<GroundCheck>(); 
 
         ApplySettings();       
@@ -50,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
         rb.mass = settings.mass;
         rb.gravityScale = settings.gravityScale;
         rb.drag = settings.airResistance;
+        if (playerCollider.sharedMaterial == playerMaterial)
+            playerCollider.sharedMaterial.friction = settings.friction;
     }
 
     public int getPlayerIndex()
@@ -88,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(moveInput.x * speed * Vector2.right, ForceMode2D.Force);
 
         bool beSlippery = !groundCheck.isGrounded || IsMoveInput;
-        playerCollider.sharedMaterial.friction = beSlippery ? 0.0f : settings.friction;
+        playerCollider.sharedMaterial = beSlippery ? slipperyMaterial : playerMaterial;
     }
 
     void Update()
