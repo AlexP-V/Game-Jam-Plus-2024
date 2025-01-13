@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 10231695}
   - component: {fileID: 10231694}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 14762608}
   - component: {fileID: 14762607}
   - component: {fileID: 14762606}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bridge piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 17139490}
   - component: {fileID: 17139489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eraser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20664243}
   - component: {fileID: 20664242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cieling hanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33525349}
   - component: {fileID: 33525348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book blue lying_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,8 +712,8 @@ Transform:
   m_GameObject: {fileID: 33525347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.256165, y: -10.473519, z: 0.19731122}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 40.256165, y: -10.9034, z: 0.19731122}
+  m_LocalScale: {x: 1, y: 0.7502, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1127080611}
@@ -858,7 +858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51699040}
   - component: {fileID: 51699039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51714942}
   - component: {fileID: 51714941}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eraser (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 66865534}
   - component: {fileID: 66865535}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70054593}
   - component: {fileID: 70054594}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1273,7 +1273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 74421491}
   - component: {fileID: 74421490}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l piece (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 76431373}
   - component: {fileID: 76431375}
   - component: {fileID: 76431374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 78796281}
   - component: {fileID: 78796280}
   - component: {fileID: 78796279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 87252210}
   - component: {fileID: 87252209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1878,7 +1878,7 @@ GameObject:
   - component: {fileID: 115586931}
   - component: {fileID: 115586930}
   - component: {fileID: 115586929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book (medium)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2008,7 +2008,7 @@ GameObject:
   - component: {fileID: 117939318}
   - component: {fileID: 117939320}
   - component: {fileID: 117939319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bridge piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2137,7 +2137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124095258}
   - component: {fileID: 124095257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2222,7 @@ GameObject:
   - component: {fileID: 126241733}
   - component: {fileID: 126241732}
   - component: {fileID: 126241731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2352,7 +2352,7 @@ GameObject:
   - component: {fileID: 131719584}
   - component: {fileID: 131719583}
   - component: {fileID: 131719582}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: clock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2871,7 +2871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160109994}
   - component: {fileID: 160109993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stool (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2955,7 +2955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166020022}
   - component: {fileID: 166020023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3039,7 +3039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169987226}
   - component: {fileID: 169987225}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3253,7 +3253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 173011668}
   - component: {fileID: 173011667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: table leg end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3337,7 +3337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 182238064}
   - component: {fileID: 182238063}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3421,7 +3421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185134277}
   - component: {fileID: 185134276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3505,7 +3505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 190917140}
   - component: {fileID: 190917141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3721,7 +3721,7 @@ GameObject:
   - component: {fileID: 223410288}
   - component: {fileID: 223410287}
   - component: {fileID: 223410286}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lamp (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4036,7 +4036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229560765}
   - component: {fileID: 229560764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: water bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4120,7 +4120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235320479}
   - component: {fileID: 235320478}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4464,7 +4464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 244230809}
   - component: {fileID: 244230808}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: table leg end (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4548,7 +4548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252915723}
   - component: {fileID: 252915722}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4762,7 +4762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 260942876}
   - component: {fileID: 260942877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4877,7 +4877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283032728}
   - component: {fileID: 283032729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5091,7 +5091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319673070}
   - component: {fileID: 319673069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower piece (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5176,7 +5176,7 @@ GameObject:
   - component: {fileID: 327081188}
   - component: {fileID: 327081190}
   - component: {fileID: 327081189}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5305,7 +5305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 335695133}
   - component: {fileID: 335695132}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5594,7 +5594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362892721}
   - component: {fileID: 362892722}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5678,7 +5678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378449307}
   - component: {fileID: 378449306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5762,7 +5762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385350025}
   - component: {fileID: 385350024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book pillar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5977,7 +5977,7 @@ GameObject:
   - component: {fileID: 428446376}
   - component: {fileID: 428446375}
   - component: {fileID: 428446374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6256,7 +6256,7 @@ GameObject:
   - component: {fileID: 442180801}
   - component: {fileID: 442180803}
   - component: {fileID: 442180802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6447,7 +6447,7 @@ GameObject:
   - component: {fileID: 472599949}
   - component: {fileID: 472599948}
   - component: {fileID: 472599947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6576,7 +6576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473217561}
   - component: {fileID: 473217560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: water bottle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6665,7 +6665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482605323}
   - component: {fileID: 482605322}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6749,7 +6749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488610511}
   - component: {fileID: 488610510}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cube piece_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6833,7 +6833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491312515}
   - component: {fileID: 491312514}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6917,7 +6917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513009054}
   - component: {fileID: 513009055}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7001,7 +7001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514742748}
   - component: {fileID: 514742747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l piece (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7242,7 +7242,7 @@ GameObject:
   - component: {fileID: 521586131}
   - component: {fileID: 521586130}
   - component: {fileID: 521586129}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cube piece_ (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7631,7 +7631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525164570}
   - component: {fileID: 525164569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7846,7 +7846,7 @@ GameObject:
   - component: {fileID: 535903924}
   - component: {fileID: 535903923}
   - component: {fileID: 535903922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8110,7 +8110,7 @@ GameObject:
   - component: {fileID: 555085477}
   - component: {fileID: 555085476}
   - component: {fileID: 555085475}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8331,7 +8331,7 @@ GameObject:
   - component: {fileID: 577369453}
   - component: {fileID: 577369455}
   - component: {fileID: 577369454}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8460,7 +8460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588153163}
   - component: {fileID: 588153162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8544,7 +8544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 596316095}
   - component: {fileID: 596316096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8629,7 +8629,7 @@ GameObject:
   - component: {fileID: 600296498}
   - component: {fileID: 600296497}
   - component: {fileID: 600296500}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8759,7 +8759,7 @@ GameObject:
   - component: {fileID: 602578487}
   - component: {fileID: 602578489}
   - component: {fileID: 602578488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: dresser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8888,7 +8888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 608126121}
   - component: {fileID: 608126120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8973,7 +8973,7 @@ GameObject:
   - component: {fileID: 608642057}
   - component: {fileID: 608642056}
   - component: {fileID: 608642055}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: shelf platform down (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9444,7 +9444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 652779273}
   - component: {fileID: 652779272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9529,7 +9529,7 @@ GameObject:
   - component: {fileID: 657589918}
   - component: {fileID: 657589917}
   - component: {fileID: 657589916}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9658,7 +9658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661509628}
   - component: {fileID: 661509627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 662404598}
   - component: {fileID: 662404597}
   - component: {fileID: 662404599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9873,7 +9873,7 @@ GameObject:
   - component: {fileID: 670560540}
   - component: {fileID: 670560542}
   - component: {fileID: 670560541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10002,7 +10002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670631381}
   - component: {fileID: 670631380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10086,7 +10086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 672994289}
   - component: {fileID: 672994288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10430,7 +10430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677350650}
   - component: {fileID: 677350649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10514,7 +10514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687521724}
   - component: {fileID: 687521723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10858,7 +10858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700168593}
   - component: {fileID: 700168592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cube piece_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10942,7 +10942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702223317}
   - component: {fileID: 702223316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11027,7 +11027,7 @@ GameObject:
   - component: {fileID: 714003527}
   - component: {fileID: 714003526}
   - component: {fileID: 714003525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower piece (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11157,7 +11157,7 @@ GameObject:
   - component: {fileID: 714181204}
   - component: {fileID: 714181203}
   - component: {fileID: 714181202}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eraser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11286,7 +11286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716318968}
   - component: {fileID: 716318967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11372,7 +11372,7 @@ GameObject:
   - component: {fileID: 719831540}
   - component: {fileID: 719831539}
   - component: {fileID: 719831538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: doll house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11807,7 +11807,7 @@ GameObject:
   - component: {fileID: 751049874}
   - component: {fileID: 751049873}
   - component: {fileID: 751049872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bridge piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12196,7 +12196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 764024365}
   - component: {fileID: 764024364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cube piece_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12540,7 +12540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 792285629}
   - component: {fileID: 792285628}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13144,7 +13144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832072814}
   - component: {fileID: 832072813}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13228,7 +13228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832653822}
   - component: {fileID: 832653821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13312,7 +13312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853427150}
   - component: {fileID: 853427149}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13419,7 +13419,7 @@ GameObject:
   - component: {fileID: 864540837}
   - component: {fileID: 864540836}
   - component: {fileID: 864540838}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pencil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13548,7 +13548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865493978}
   - component: {fileID: 865493977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13632,7 +13632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 873601914}
   - component: {fileID: 873601913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book blue lying_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13716,7 +13716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886709201}
   - component: {fileID: 886709200}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13802,7 +13802,7 @@ GameObject:
   - component: {fileID: 887578241}
   - component: {fileID: 887578240}
   - component: {fileID: 887578239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: dresser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13976,7 +13976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888096232}
   - component: {fileID: 888096231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14060,7 +14060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 902890999}
   - component: {fileID: 902890998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14549,7 +14549,7 @@ GameObject:
   - component: {fileID: 927970787}
   - component: {fileID: 927970789}
   - component: {fileID: 927970788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14808,7 +14808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959361849}
   - component: {fileID: 959361850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15282,7 +15282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 982002726}
   - component: {fileID: 982002725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15366,7 +15366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984598572}
   - component: {fileID: 984598571}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15434,8 +15434,8 @@ Transform:
   m_GameObject: {fileID: 984598570}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.746166, y: -10.513519, z: 0.19731122}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 28.746166, y: -10.9334, z: 0.19731122}
+  m_LocalScale: {x: 1, y: 0.7502, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1127080611}
@@ -15580,7 +15580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000754138}
   - component: {fileID: 1000754137}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15664,7 +15664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005311281}
   - component: {fileID: 1005311280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15879,7 +15879,7 @@ GameObject:
   - component: {fileID: 1007127191}
   - component: {fileID: 1007127193}
   - component: {fileID: 1007127192}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16008,7 +16008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021459742}
   - component: {fileID: 1021459741}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16092,7 +16092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023740282}
   - component: {fileID: 1023740281}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16176,7 +16176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024325688}
   - component: {fileID: 1024325687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16390,7 +16390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1027988933}
   - component: {fileID: 1027988932}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16474,7 +16474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045848048}
   - component: {fileID: 1045848047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16559,7 +16559,7 @@ GameObject:
   - component: {fileID: 1052082006}
   - component: {fileID: 1052082005}
   - component: {fileID: 1052082007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16772,7 +16772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072504888}
   - component: {fileID: 1072504887}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16856,7 +16856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1073495913}
   - component: {fileID: 1073495912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17201,7 +17201,7 @@ GameObject:
   - component: {fileID: 1089631158}
   - component: {fileID: 1089631157}
   - component: {fileID: 1089631156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17330,7 +17330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108390228}
   - component: {fileID: 1108390229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17520,7 +17520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118526728}
   - component: {fileID: 1118526727}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17841,7 +17841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138109602}
   - component: {fileID: 1138109601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18056,7 +18056,7 @@ GameObject:
   - component: {fileID: 1164397597}
   - component: {fileID: 1164397596}
   - component: {fileID: 1164397598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18315,7 +18315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176547380}
   - component: {fileID: 1176547379}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18399,7 +18399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176630074}
   - component: {fileID: 1176630075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18790,7 +18790,7 @@ GameObject:
   - component: {fileID: 1201336117}
   - component: {fileID: 1201336119}
   - component: {fileID: 1201336118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18920,7 +18920,7 @@ GameObject:
   - component: {fileID: 1212925169}
   - component: {fileID: 1212925168}
   - component: {fileID: 1212925170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19050,7 +19050,7 @@ GameObject:
   - component: {fileID: 1225324403}
   - component: {fileID: 1225324402}
   - component: {fileID: 1225324401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19524,7 +19524,7 @@ GameObject:
   - component: {fileID: 1246028665}
   - component: {fileID: 1246028664}
   - component: {fileID: 1246028666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19653,7 +19653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246114442}
   - component: {fileID: 1246114441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: toy car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19737,7 +19737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250870585}
   - component: {fileID: 1250870584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: water bottle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19951,7 +19951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255890941}
   - component: {fileID: 1255890940}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20036,7 +20036,7 @@ GameObject:
   - component: {fileID: 1266381512}
   - component: {fileID: 1266381511}
   - component: {fileID: 1266381510}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20296,7 +20296,7 @@ GameObject:
   - component: {fileID: 1298936363}
   - component: {fileID: 1298936362}
   - component: {fileID: 1298936361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: small desk platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20555,7 +20555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309040308}
   - component: {fileID: 1309040307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20639,7 +20639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315701442}
   - component: {fileID: 1315701441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21113,7 +21113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338618584}
   - component: {fileID: 1338618585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21198,7 +21198,7 @@ GameObject:
   - component: {fileID: 1346408208}
   - component: {fileID: 1346408210}
   - component: {fileID: 1346408209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21328,7 +21328,7 @@ GameObject:
   - component: {fileID: 1360552376}
   - component: {fileID: 1360552375}
   - component: {fileID: 1360552374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21587,7 +21587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368646951}
   - component: {fileID: 1368646950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21671,7 +21671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369219736}
   - component: {fileID: 1369219735}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21755,7 +21755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1369843932}
   - component: {fileID: 1369843931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l piece (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21839,7 +21839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370322884}
   - component: {fileID: 1370322883}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pencil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22150,7 +22150,7 @@ GameObject:
   - component: {fileID: 1375939677}
   - component: {fileID: 1375939676}
   - component: {fileID: 1375939675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22279,7 +22279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1377430949}
   - component: {fileID: 1377430948}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22364,7 +22364,7 @@ GameObject:
   - component: {fileID: 1379800571}
   - component: {fileID: 1379800570}
   - component: {fileID: 1379800569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22623,7 +22623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422066137}
   - component: {fileID: 1422066136}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22707,7 +22707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1424059580}
   - component: {fileID: 1424059579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22921,7 +22921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439277608}
   - component: {fileID: 1439277607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_ (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23135,7 +23135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467144592}
   - component: {fileID: 1467144591}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23219,7 +23219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475886734}
   - component: {fileID: 1475886733}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23303,7 +23303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484521055}
   - component: {fileID: 1484521054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23388,7 +23388,7 @@ GameObject:
   - component: {fileID: 1489336719}
   - component: {fileID: 1489336721}
   - component: {fileID: 1489336720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23605,7 +23605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495761374}
   - component: {fileID: 1495761373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: toy car (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23690,7 +23690,7 @@ GameObject:
   - component: {fileID: 1501282354}
   - component: {fileID: 1501282356}
   - component: {fileID: 1501282355}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23819,7 +23819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506704093}
   - component: {fileID: 1506704092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23903,7 +23903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1517812784}
   - component: {fileID: 1517812785}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: purple cube 1 blcok (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24118,7 +24118,7 @@ GameObject:
   - component: {fileID: 1545751317}
   - component: {fileID: 1545751316}
   - component: {fileID: 1545751318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pencil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24377,7 +24377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1557180085}
   - component: {fileID: 1557180084}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cube piece_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24462,7 +24462,7 @@ GameObject:
   - component: {fileID: 1564085067}
   - component: {fileID: 1564085069}
   - component: {fileID: 1564085068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24592,7 +24592,7 @@ GameObject:
   - component: {fileID: 1575041966}
   - component: {fileID: 1575041965}
   - component: {fileID: 1575041964}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: table leg end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24851,7 +24851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578140747}
   - component: {fileID: 1578140748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25019,7 +25019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579212824}
   - component: {fileID: 1579212823}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book (medium) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25233,7 +25233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585558320}
   - component: {fileID: 1585558319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book blue lying_ (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25593,7 +25593,7 @@ GameObject:
   - component: {fileID: 1622922939}
   - component: {fileID: 1622922938}
   - component: {fileID: 1622922940}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: table leg end (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25722,7 +25722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643364462}
   - component: {fileID: 1643364463}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: yellow cube 1 blcok (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26225,7 +26225,7 @@ GameObject:
   - component: {fileID: 1666549677}
   - component: {fileID: 1666549676}
   - component: {fileID: 1666549675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26354,7 +26354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1674585861}
   - component: {fileID: 1674585860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26438,7 +26438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1683928116}
   - component: {fileID: 1683928115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26523,7 +26523,7 @@ GameObject:
   - component: {fileID: 1706312284}
   - component: {fileID: 1706312286}
   - component: {fileID: 1706312285}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26653,7 +26653,7 @@ GameObject:
   - component: {fileID: 1710554261}
   - component: {fileID: 1710554260}
   - component: {fileID: 1710554259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26766,8 +26766,8 @@ Transform:
   m_GameObject: {fileID: 1710554258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.225594, y: -10.5943575, z: 0.19731122}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 17.225594, y: -10.994, z: 0.19731122}
+  m_LocalScale: {x: 1, y: 0.7502, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1127080611}
@@ -27043,7 +27043,7 @@ GameObject:
   - component: {fileID: 1725574261}
   - component: {fileID: 1725574260}
   - component: {fileID: 1725574259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: green cube 1 blcok (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27247,7 +27247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1736953165}
   - component: {fileID: 1736953166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27333,7 +27333,7 @@ GameObject:
   - component: {fileID: 1741428933}
   - component: {fileID: 1741428936}
   - component: {fileID: 1741428935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lamp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27507,7 +27507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1751865444}
   - component: {fileID: 1751865445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27591,7 +27591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759366223}
   - component: {fileID: 1759366222}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27675,7 +27675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772177358}
   - component: {fileID: 1772177359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27889,7 +27889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778487862}
   - component: {fileID: 1778487861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27973,7 +27973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779232323}
   - component: {fileID: 1779232324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28068,7 +28068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1793039030}
   - component: {fileID: 1793039031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: blue cube 1 blcok (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28152,7 +28152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1796326367}
   - component: {fileID: 1796326366}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: doll house (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28237,7 +28237,7 @@ GameObject:
   - component: {fileID: 1801709997}
   - component: {fileID: 1801709996}
   - component: {fileID: 1801709995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28367,7 +28367,7 @@ GameObject:
   - component: {fileID: 1805177740}
   - component: {fileID: 1805177739}
   - component: {fileID: 1805177741}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28683,7 +28683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1827519268}
   - component: {fileID: 1827519267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28768,7 +28768,7 @@ GameObject:
   - component: {fileID: 1831891646}
   - component: {fileID: 1831891645}
   - component: {fileID: 1831891644}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28897,7 +28897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1836284000}
   - component: {fileID: 1836283999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eraser (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29072,7 +29072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842117591}
   - component: {fileID: 1842117590}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform down (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29156,7 +29156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1845285857}
   - component: {fileID: 1845285856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29240,7 +29240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849810707}
   - component: {fileID: 1849810706}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pencil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29455,7 +29455,7 @@ GameObject:
   - component: {fileID: 1856377712}
   - component: {fileID: 1856377714}
   - component: {fileID: 1856377713}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: min shelf platform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29714,7 +29714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881602422}
   - component: {fileID: 1881602421}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book pillar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29798,7 +29798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1903296191}
   - component: {fileID: 1903296190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30012,7 +30012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908840108}
   - component: {fileID: 1908840107}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30386,7 +30386,7 @@ GameObject:
   - component: {fileID: 1916975638}
   - component: {fileID: 1916975637}
   - component: {fileID: 1916975636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pencil case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30905,7 +30905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929487781}
   - component: {fileID: 1929487780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31250,7 +31250,7 @@ GameObject:
   - component: {fileID: 1941316193}
   - component: {fileID: 1941316192}
   - component: {fileID: 1941316191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_ (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31379,7 +31379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943684906}
   - component: {fileID: 1943684905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book red lying_ (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32244,7 +32244,7 @@ GameObject:
   - component: {fileID: 1985867751}
   - component: {fileID: 1985867753}
   - component: {fileID: 1985867752}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32349,7 +32349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2012507592}
   - component: {fileID: 2012507593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orange cube 1 blcok (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32433,7 +32433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053335241}
   - component: {fileID: 2053335240}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shelf platform up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32647,7 +32647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057784252}
   - component: {fileID: 2057784251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32732,7 +32732,7 @@ GameObject:
   - component: {fileID: 2059198965}
   - component: {fileID: 2059198964}
   - component: {fileID: 2059198966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book (medium)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32884,7 +32884,7 @@ GameObject:
   - component: {fileID: 2075423158}
   - component: {fileID: 2075423157}
   - component: {fileID: 2075423159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book purple lying (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33013,7 +33013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083910988}
   - component: {fileID: 2083910987}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: backpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33362,7 +33362,7 @@ GameObject:
   - component: {fileID: 2121598204}
   - component: {fileID: 2121598203}
   - component: {fileID: 2121598202}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: building block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33491,7 +33491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132057529}
   - component: {fileID: 2132057528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33575,7 +33575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139901579}
   - component: {fileID: 2139901578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: eraser (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33659,7 +33659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2144501664}
   - component: {fileID: 2144501665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book standing 3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
