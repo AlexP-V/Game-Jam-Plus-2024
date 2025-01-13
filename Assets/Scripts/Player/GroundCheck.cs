@@ -7,30 +7,27 @@ public class GroundCheck : MonoBehaviour
     [HideInInspector] public bool isGrounded = false;
     Animator animator;
 
+    [SerializeField] private Transform groundCheckPoint;
+    [SerializeField] private float groundCheckRadius = 0.1f;
+    [SerializeField] private LayerMask groundLayer;
+
     void Awake()
     {
         animator = transform.parent.GetComponentInChildren<Animator>();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void FixedUpdate()
     {
-        if (other.CompareTag("Ground") || other.CompareTag("Player 1") || other.CompareTag("Player 2"))
-        {
-            isGrounded = true;
-            animator.SetBool("inAir", false);
-            Debug.Log("Grounded");
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
 
-        }
+        //animator.SetBool("inAir", !isGrounded);        
     }
-    
-    void OnTriggerExit2D(Collider2D other)
+
+    private void OnDrawGizmosSelected()
     {
-        if (other.CompareTag("Ground") || other.CompareTag("Player 1") || other.CompareTag("Player 2"))
-        {
-            isGrounded = false;
-            animator.SetBool("inAir", true);
-            Debug.Log("Not Grounded");
-        }          
-        
+        if (groundCheckPoint == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
     }
 }

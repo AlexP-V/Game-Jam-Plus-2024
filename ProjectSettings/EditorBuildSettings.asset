@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Start Scene.unity
+    path: Assets/Scenes/Start Scene.unity
     guid: abcbe0243366744f599a7254a4f2199e
   - enabled: 1
     path: Assets/Credits Scene.unity
     guid: 84871c83275b24529a0e0878e20743c4
   - enabled: 1
-    path: Assets/Scenes/without white box.unity
-    guid: 5ce1d3f9ca9d7f144afa00a7161d9359
-  - enabled: 1
     path: Assets/Win Scene.unity
     guid: e7d20d90d889b484dbde5c41d1525448
+  - enabled: 1
+    path: Assets/Scenes/Boman.unity
+    guid: 113ba18ba51a4364f95780b5ad66598b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2e950587abd919c4b9ef72f3942f66eb, type: 2}
