@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         animator = GetComponentInChildren<Animator>();
+       
 
         initialScale = transform.localScale;
     }
@@ -98,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // FOR ANIMATION
+        //For animation
         animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
         if (moveInput.x > 0)
         {
@@ -109,7 +110,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 theScale = transform.localScale;
             transform.localScale = new Vector3(-initialScale.x, theScale.y, theScale.z);
-        }        
+        }
+             
     }
 }
 
