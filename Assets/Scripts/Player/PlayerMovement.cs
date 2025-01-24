@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //For animation
         animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
-        if (moveInput.x > 0)
+       /* if (moveInput.x > 0)
         {
             Vector3 theScale = transform.localScale;
             transform.localScale = new Vector3(initialScale.x, theScale.y, theScale.z);
@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 theScale = transform.localScale;
             transform.localScale = new Vector3(-initialScale.x, theScale.y, theScale.z);
         }
-             
+        */     
     }
 }
 
